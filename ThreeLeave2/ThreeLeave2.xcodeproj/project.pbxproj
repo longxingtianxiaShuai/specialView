@@ -1,0 +1,569 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		304BB17C1FAC574D00DA03CD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 304BB17B1FAC574D00DA03CD /* AppDelegate.m */; };
+		304BB17F1FAC574D00DA03CD /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 304BB17E1FAC574D00DA03CD /* ViewController.m */; };
+		304BB1821FAC574D00DA03CD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 304BB1801FAC574D00DA03CD /* Main.storyboard */; };
+		304BB1841FAC574D00DA03CD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 304BB1831FAC574D00DA03CD /* Assets.xcassets */; };
+		304BB1871FAC574D00DA03CD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 304BB1851FAC574D00DA03CD /* LaunchScreen.storyboard */; };
+		304BB18A1FAC574D00DA03CD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 304BB1891FAC574D00DA03CD /* main.m */; };
+		304BB1941FAC574D00DA03CD /* ThreeLeave2Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 304BB1931FAC574D00DA03CD /* ThreeLeave2Tests.m */; };
+		304BB19F1FAC574D00DA03CD /* ThreeLeave2UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 304BB19E1FAC574D00DA03CD /* ThreeLeave2UITests.m */; };
+		304BB1B01FAC595500DA03CD /* DemoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 304BB1AD1FAC595400DA03CD /* DemoCell.m */; };
+		304BB1B11FAC595500DA03CD /* DemoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 304BB1AF1FAC595500DA03CD /* DemoModel.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		304BB1901FAC574D00DA03CD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 304BB16F1FAC574D00DA03CD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 304BB1761FAC574D00DA03CD;
+			remoteInfo = ThreeLeave2;
+		};
+		304BB19B1FAC574D00DA03CD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 304BB16F1FAC574D00DA03CD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 304BB1761FAC574D00DA03CD;
+			remoteInfo = ThreeLeave2;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		304BB1771FAC574D00DA03CD /* ThreeLeave2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ThreeLeave2.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		304BB17A1FAC574D00DA03CD /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		304BB17B1FAC574D00DA03CD /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		304BB17D1FAC574D00DA03CD /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		304BB17E1FAC574D00DA03CD /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		304BB1811FAC574D00DA03CD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		304BB1831FAC574D00DA03CD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		304BB1861FAC574D00DA03CD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		304BB1881FAC574D00DA03CD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		304BB1891FAC574D00DA03CD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		304BB18F1FAC574D00DA03CD /* ThreeLeave2Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ThreeLeave2Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		304BB1931FAC574D00DA03CD /* ThreeLeave2Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ThreeLeave2Tests.m; sourceTree = "<group>"; };
+		304BB1951FAC574D00DA03CD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		304BB19A1FAC574D00DA03CD /* ThreeLeave2UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ThreeLeave2UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		304BB19E1FAC574D00DA03CD /* ThreeLeave2UITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ThreeLeave2UITests.m; sourceTree = "<group>"; };
+		304BB1A01FAC574D00DA03CD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		304BB1AC1FAC595400DA03CD /* DemoCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DemoCell.h; sourceTree = "<group>"; };
+		304BB1AD1FAC595400DA03CD /* DemoCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DemoCell.m; sourceTree = "<group>"; };
+		304BB1AE1FAC595500DA03CD /* DemoModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DemoModel.h; sourceTree = "<group>"; };
+		304BB1AF1FAC595500DA03CD /* DemoModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DemoModel.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		304BB1741FAC574D00DA03CD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		304BB18C1FAC574D00DA03CD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		304BB1971FAC574D00DA03CD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		304BB16E1FAC574D00DA03CD = {
+			isa = PBXGroup;
+			children = (
+				304BB1791FAC574D00DA03CD /* ThreeLeave2 */,
+				304BB1921FAC574D00DA03CD /* ThreeLeave2Tests */,
+				304BB19D1FAC574D00DA03CD /* ThreeLeave2UITests */,
+				304BB1781FAC574D00DA03CD /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		304BB1781FAC574D00DA03CD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				304BB1771FAC574D00DA03CD /* ThreeLeave2.app */,
+				304BB18F1FAC574D00DA03CD /* ThreeLeave2Tests.xctest */,
+				304BB19A1FAC574D00DA03CD /* ThreeLeave2UITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		304BB1791FAC574D00DA03CD /* ThreeLeave2 */ = {
+			isa = PBXGroup;
+			children = (
+				304BB1AC1FAC595400DA03CD /* DemoCell.h */,
+				304BB1AD1FAC595400DA03CD /* DemoCell.m */,
+				304BB1AE1FAC595500DA03CD /* DemoModel.h */,
+				304BB1AF1FAC595500DA03CD /* DemoModel.m */,
+				304BB17A1FAC574D00DA03CD /* AppDelegate.h */,
+				304BB17B1FAC574D00DA03CD /* AppDelegate.m */,
+				304BB17D1FAC574D00DA03CD /* ViewController.h */,
+				304BB17E1FAC574D00DA03CD /* ViewController.m */,
+				304BB1801FAC574D00DA03CD /* Main.storyboard */,
+				304BB1831FAC574D00DA03CD /* Assets.xcassets */,
+				304BB1851FAC574D00DA03CD /* LaunchScreen.storyboard */,
+				304BB1881FAC574D00DA03CD /* Info.plist */,
+				304BB1891FAC574D00DA03CD /* main.m */,
+			);
+			path = ThreeLeave2;
+			sourceTree = "<group>";
+		};
+		304BB1921FAC574D00DA03CD /* ThreeLeave2Tests */ = {
+			isa = PBXGroup;
+			children = (
+				304BB1931FAC574D00DA03CD /* ThreeLeave2Tests.m */,
+				304BB1951FAC574D00DA03CD /* Info.plist */,
+			);
+			path = ThreeLeave2Tests;
+			sourceTree = "<group>";
+		};
+		304BB19D1FAC574D00DA03CD /* ThreeLeave2UITests */ = {
+			isa = PBXGroup;
+			children = (
+				304BB19E1FAC574D00DA03CD /* ThreeLeave2UITests.m */,
+				304BB1A01FAC574D00DA03CD /* Info.plist */,
+			);
+			path = ThreeLeave2UITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		304BB1761FAC574D00DA03CD /* ThreeLeave2 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 304BB1A31FAC574D00DA03CD /* Build configuration list for PBXNativeTarget "ThreeLeave2" */;
+			buildPhases = (
+				304BB1731FAC574D00DA03CD /* Sources */,
+				304BB1741FAC574D00DA03CD /* Frameworks */,
+				304BB1751FAC574D00DA03CD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ThreeLeave2;
+			productName = ThreeLeave2;
+			productReference = 304BB1771FAC574D00DA03CD /* ThreeLeave2.app */;
+			productType = "com.apple.product-type.application";
+		};
+		304BB18E1FAC574D00DA03CD /* ThreeLeave2Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 304BB1A61FAC574D00DA03CD /* Build configuration list for PBXNativeTarget "ThreeLeave2Tests" */;
+			buildPhases = (
+				304BB18B1FAC574D00DA03CD /* Sources */,
+				304BB18C1FAC574D00DA03CD /* Frameworks */,
+				304BB18D1FAC574D00DA03CD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				304BB1911FAC574D00DA03CD /* PBXTargetDependency */,
+			);
+			name = ThreeLeave2Tests;
+			productName = ThreeLeave2Tests;
+			productReference = 304BB18F1FAC574D00DA03CD /* ThreeLeave2Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		304BB1991FAC574D00DA03CD /* ThreeLeave2UITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 304BB1A91FAC574D00DA03CD /* Build configuration list for PBXNativeTarget "ThreeLeave2UITests" */;
+			buildPhases = (
+				304BB1961FAC574D00DA03CD /* Sources */,
+				304BB1971FAC574D00DA03CD /* Frameworks */,
+				304BB1981FAC574D00DA03CD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				304BB19C1FAC574D00DA03CD /* PBXTargetDependency */,
+			);
+			name = ThreeLeave2UITests;
+			productName = ThreeLeave2UITests;
+			productReference = 304BB19A1FAC574D00DA03CD /* ThreeLeave2UITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		304BB16F1FAC574D00DA03CD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0900;
+				ORGANIZATIONNAME = BIM;
+				TargetAttributes = {
+					304BB1761FAC574D00DA03CD = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+					};
+					304BB18E1FAC574D00DA03CD = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 304BB1761FAC574D00DA03CD;
+					};
+					304BB1991FAC574D00DA03CD = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 304BB1761FAC574D00DA03CD;
+					};
+				};
+			};
+			buildConfigurationList = 304BB1721FAC574D00DA03CD /* Build configuration list for PBXProject "ThreeLeave2" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 304BB16E1FAC574D00DA03CD;
+			productRefGroup = 304BB1781FAC574D00DA03CD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				304BB1761FAC574D00DA03CD /* ThreeLeave2 */,
+				304BB18E1FAC574D00DA03CD /* ThreeLeave2Tests */,
+				304BB1991FAC574D00DA03CD /* ThreeLeave2UITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		304BB1751FAC574D00DA03CD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				304BB1871FAC574D00DA03CD /* LaunchScreen.storyboard in Resources */,
+				304BB1841FAC574D00DA03CD /* Assets.xcassets in Resources */,
+				304BB1821FAC574D00DA03CD /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		304BB18D1FAC574D00DA03CD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		304BB1981FAC574D00DA03CD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		304BB1731FAC574D00DA03CD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				304BB17F1FAC574D00DA03CD /* ViewController.m in Sources */,
+				304BB18A1FAC574D00DA03CD /* main.m in Sources */,
+				304BB1B01FAC595500DA03CD /* DemoCell.m in Sources */,
+				304BB1B11FAC595500DA03CD /* DemoModel.m in Sources */,
+				304BB17C1FAC574D00DA03CD /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		304BB18B1FAC574D00DA03CD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				304BB1941FAC574D00DA03CD /* ThreeLeave2Tests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		304BB1961FAC574D00DA03CD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				304BB19F1FAC574D00DA03CD /* ThreeLeave2UITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		304BB1911FAC574D00DA03CD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 304BB1761FAC574D00DA03CD /* ThreeLeave2 */;
+			targetProxy = 304BB1901FAC574D00DA03CD /* PBXContainerItemProxy */;
+		};
+		304BB19C1FAC574D00DA03CD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 304BB1761FAC574D00DA03CD /* ThreeLeave2 */;
+			targetProxy = 304BB19B1FAC574D00DA03CD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		304BB1801FAC574D00DA03CD /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				304BB1811FAC574D00DA03CD /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		304BB1851FAC574D00DA03CD /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				304BB1861FAC574D00DA03CD /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		304BB1A11FAC574D00DA03CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		304BB1A21FAC574D00DA03CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		304BB1A41FAC574D00DA03CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = NK22HY3LBA;
+				INFOPLIST_FILE = ThreeLeave2/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.baimuxiaofang.ThreeLeave2;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		304BB1A51FAC574D00DA03CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = NK22HY3LBA;
+				INFOPLIST_FILE = ThreeLeave2/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.baimuxiaofang.ThreeLeave2;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		304BB1A71FAC574D00DA03CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = NK22HY3LBA;
+				INFOPLIST_FILE = ThreeLeave2Tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.baimuxiaofang.ThreeLeave2Tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ThreeLeave2.app/ThreeLeave2";
+			};
+			name = Debug;
+		};
+		304BB1A81FAC574D00DA03CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = NK22HY3LBA;
+				INFOPLIST_FILE = ThreeLeave2Tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.baimuxiaofang.ThreeLeave2Tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ThreeLeave2.app/ThreeLeave2";
+			};
+			name = Release;
+		};
+		304BB1AA1FAC574D00DA03CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = NK22HY3LBA;
+				INFOPLIST_FILE = ThreeLeave2UITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.baimuxiaofang.ThreeLeave2UITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ThreeLeave2;
+			};
+			name = Debug;
+		};
+		304BB1AB1FAC574D00DA03CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = NK22HY3LBA;
+				INFOPLIST_FILE = ThreeLeave2UITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.baimuxiaofang.ThreeLeave2UITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ThreeLeave2;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		304BB1721FAC574D00DA03CD /* Build configuration list for PBXProject "ThreeLeave2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				304BB1A11FAC574D00DA03CD /* Debug */,
+				304BB1A21FAC574D00DA03CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		304BB1A31FAC574D00DA03CD /* Build configuration list for PBXNativeTarget "ThreeLeave2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				304BB1A41FAC574D00DA03CD /* Debug */,
+				304BB1A51FAC574D00DA03CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		304BB1A61FAC574D00DA03CD /* Build configuration list for PBXNativeTarget "ThreeLeave2Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				304BB1A71FAC574D00DA03CD /* Debug */,
+				304BB1A81FAC574D00DA03CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		304BB1A91FAC574D00DA03CD /* Build configuration list for PBXNativeTarget "ThreeLeave2UITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				304BB1AA1FAC574D00DA03CD /* Debug */,
+				304BB1AB1FAC574D00DA03CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 304BB16F1FAC574D00DA03CD /* Project object */;
+}
