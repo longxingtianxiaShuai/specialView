@@ -1,7 +1,0 @@
-# Uncomment the next line to define a global platform for your project
-platform :ios, '9.0'
-
-target 'tableView嵌套tableView并刷新及滚动条是否显示' do
-pod 'SVPullToRefresh'
-
-end
