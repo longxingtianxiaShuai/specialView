@@ -47,8 +47,10 @@
     // 传递模型给cell
    HomeCell *cell = [tableView dequeueReusableCellWithIdentifier:homeIndentifier];
     cell.homeModel = model;
+    //这两句代码一定要添加
     cell.frame = tableView.bounds;
     [cell layoutIfNeeded];
+    
     [cell reloadData:model];
     return cell;
     
