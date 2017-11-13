@@ -43,8 +43,7 @@
     __weak UITableView *tableView = self.tableView;
     dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(2.0 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
         [tableView reloadData];
-        //[tableView.infiniteScrollingView stopAnimating];
-       // [tableView.pullToRefreshView stopAnimating];
+       
     });
 }
 
@@ -102,8 +101,7 @@
     // 只有控制这个tableview的滑动才可以 实现下拉刷新 所以设置scrollView.contentOffset = CGPointZero
     // 向下拖动  scrollView.contentOffset.y 值小于零
     //  vcCanScroll 从上一个控制器传递过来
-    
-    CGFloat bottomCellOffset = [(UITableView *)scrollView rectForSection:0].origin.y;
+
 
     
     if (!_vcCanScroll) {

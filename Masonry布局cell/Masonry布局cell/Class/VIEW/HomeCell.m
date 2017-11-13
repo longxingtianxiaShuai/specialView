@@ -85,9 +85,11 @@
     
     
     UICollectionViewFlowLayout *layout = [[UICollectionViewFlowLayout alloc]init];
-    layout.scrollDirection = UICollectionViewScrollDirectionVertical;
+  //  layout.scrollDirection = UICollectionViewScrollDirectionHorizontal;  // 水平移动
+    layout.scrollDirection = UICollectionViewScrollDirectionVertical;// 垂直移动
     UICollectionView *collectionView = [[UICollectionView alloc]initWithFrame:CGRectZero collectionViewLayout:layout];
     [collectionView registerClass:[UICollectionViewCell class] forCellWithReuseIdentifier:@"cell"];
+    collectionView.pagingEnabled = YES;
     [self.contentView addSubview:collectionView];
     collectionView.delegate = self;
     collectionView.dataSource = self;
@@ -117,8 +119,8 @@
         make.top.equalTo(self.contentLabel.mas_bottom).mas_offset(marginW);
         make.left.equalTo(self.contentView.mas_left).mas_offset(marginW);
         make.right.equalTo(self.contentView.mas_right).mas_offset(-marginW);
-        //make.bottom.equalTo(self.contentView.mas_bottom).mas_offset(-marginW);
-        make.height.mas_equalTo(100);
+        // 如果是垂直水平滚动 这里需要实现预估好高度
+        make.height.mas_equalTo(155);
     }];
 
     [self.line mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -135,7 +137,7 @@
     // 如果添加约束 只写要添加的那一个
     [self.contentLabel mas_updateConstraints:^(MASConstraintMaker *make) {
                 make.height.mas_equalTo(self.contentLabelH);
-       // make.height.mas_equalTo(300);
+     
         
             }];
     
@@ -143,11 +145,15 @@
     self.dataArray = homeModel.dataArray;
     
     [self.collectionView reloadData];
-    CGSize collectionviewSize = self.collectionView.collectionViewLayout.collectionViewContentSize;
+    
+    // 如果是水平滚动可以吧这里注释掉
+   CGSize collectionviewSize = self.collectionView.collectionViewLayout.collectionViewContentSize;
 
 
     [self.collectionView mas_updateConstraints:^(MASConstraintMaker *make) {
-         make.height.mas_equalTo(collectionviewSize.height);
+
+     make.height.mas_equalTo(collectionviewSize.height);
+
     }];
     // 约束更新
     [self.contentView layoutIfNeeded];
@@ -155,34 +161,12 @@
     homeModel.cellHeight = CGRectGetMaxY(self.collectionView.frame) + 10;
 }
 
-- (CGFloat)myGetContentLabelH: (HomeModel *)model{
-    NSLog(@"model.cellHeight==  %f",model.cellHeight);
-    if (!model.cellHeight) {
-        CGSize size = CGSizeMake([UIScreen mainScreen].bounds.size.width - 2 * marginW, MAXFLOAT);
-        // CGSize size = CGSizeMake(100, MAXFLOAT);
-        
-        CGFloat h = [model.contentText boundingRectWithSize:size options:NSStringDrawingUsesLineFragmentOrigin | NSStringDrawingUsesFontLeading attributes:@{NSFontAttributeName:[UIFont systemFontOfSize:16]} context:nil].size.height;
-        // label和底部有marginw 的间距
-        //_contentLabelH = h + marginW ;
-        _contentLabelH = h;
-        return _contentLabelH;
-    }
-    return model.cellHeight;
-}
 
 
 // label内容高度
 - (CGFloat)contentLabelH{
-//    if (!_contentLabelH) {
-//
-//       CGSize size = CGSizeMake([UIScreen mainScreen].bounds.size.width - 2 * marginW, MAXFLOAT);
-//       // CGSize size = CGSizeMake(100, MAXFLOAT);
-//
-//        CGFloat h = [self.homeModel.contentText boundingRectWithSize:size options:NSStringDrawingUsesLineFragmentOrigin | NSStringDrawingUsesFontLeading attributes:@{NSFontAttributeName:[UIFont systemFontOfSize:16]} context:nil].size.height;
-//        // label和底部有marginw 的间距
-//        _contentLabelH = h + marginW ;
-//    }
- //   NSLog(@"self.homeModel.contentText== %@  %f",self.homeModel.contentText,_contentLabelH);
+
+
     
     CGSize size = CGSizeMake([UIScreen mainScreen].bounds.size.width - 2 * marginW, MAXFLOAT);
     // CGSize size = CGSizeMake(100, MAXFLOAT);
@@ -200,12 +184,7 @@
     self.dataArray = homeModel.dataArray;
     self.iconImageView.image = [UIImage imageNamed:homeModel.icon];
     self.contentLabel.text = homeModel.contentText;
-//    [self.contentView layoutIfNeeded];
-//    [self.contentLabel mas_makeConstraints:^(MASConstraintMaker *make) {
-//        make.height.mas_equalTo(self.contentLabelH);
-//        //make.height.mas_equalTo(100);
-//
-//    }];
+
     
 }
 
