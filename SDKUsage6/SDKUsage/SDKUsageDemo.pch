@@ -1,0 +1,31 @@
+//
+//  SDKUsageDemo.pch
+//  SDKUsage
+//
+//  Created by BIM on 2017/10/16.
+//  Copyright © 2017年 BIM. All rights reserved.
+//
+
+#ifndef SDKUsageDemo_pch
+#define SDKUsageDemo_pch
+
+#ifdef DEBUG
+       #define NSLog(...) NSLog(__VA_ARGS__)
+       #define debugMethod() NSLog(@"%s", __func__)
+#else
+       #define NSLog(...)
+       #define debugMethod()
+#endif
+// 1046(4楼有5个)   1051   1001(12楼有)   1108   1087
+#define VBMapProjtectId 1046
+
+// 内网
+#define  baseUrl  @"http://192.168.0.137:8080";
+// 外网
+//#define baseUrl @"http://qq18373411.iok.la:8070";
+#import "BaseViewController.h"
+#import "BaseTableViewController.h"
+#import <Masonry.h>
+#import <SVProgressHUD.h>
+
+#endif /* SDKUsageDemo_pch */

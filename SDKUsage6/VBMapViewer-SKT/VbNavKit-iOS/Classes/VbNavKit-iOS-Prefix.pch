@@ -1,0 +1,7 @@
+//
+// Prefix header for all source files of the 'VbBIMRenderKit' target in the 'VbBIMRenderKit' project
+//
+
+#ifdef __OBJC__
+    #import <Foundation/Foundation.h>
+#endif

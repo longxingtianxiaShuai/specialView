@@ -1,0 +1,546 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C57F499E1AB3E0FE0053EAB0 /* HeadingInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = C57F499D1AB3E0FE0053EAB0 /* HeadingInfo.m */; };
+		C5FF3D8C1AADBD9C009D9FAE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C5FF3D8B1AADBD9C009D9FAE /* UIKit.framework */; };
+		D015B63C1960F27C00D03BF8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D015B63B1960F27C00D03BF8 /* Foundation.framework */; };
+		D015B6411960F27C00D03BF8 /* VBIPS.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = D015B6401960F27C00D03BF8 /* VBIPS.h */; };
+		D015B6431960F27C00D03BF8 /* VBIPS.m in Sources */ = {isa = PBXBuildFile; fileRef = D015B6421960F27C00D03BF8 /* VBIPS.m */; };
+		D015B64B1960F27C00D03BF8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D015B63B1960F27C00D03BF8 /* Foundation.framework */; };
+		D015B6501960F27C00D03BF8 /* libVBIPS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D015B6381960F27C00D03BF8 /* libVBIPS.a */; };
+		D015B6561960F27C00D03BF8 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D015B6541960F27C00D03BF8 /* InfoPlist.strings */; };
+		D015B6581960F27C00D03BF8 /* VBIPSTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D015B6571960F27C00D03BF8 /* VBIPSTests.m */; };
+		D015B6621960F2F000D03BF8 /* SLIndoorLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D015B6611960F2F000D03BF8 /* SLIndoorLocation.framework */; };
+		D015B66B1960F3E000D03BF8 /* SLIPS.m in Sources */ = {isa = PBXBuildFile; fileRef = D015B66A1960F3E000D03BF8 /* SLIPS.m */; };
+		D015B66F1960F80D00D03BF8 /* BaseIPS.m in Sources */ = {isa = PBXBuildFile; fileRef = D015B66E1960F80D00D03BF8 /* BaseIPS.m */; };
+		D0238D4C196B84B200C68369 /* BeaconIPS.m in Sources */ = {isa = PBXBuildFile; fileRef = D0238D4B196B84B200C68369 /* BeaconIPS.m */; };
+		D0363AFB199459DD00A80166 /* VBSimulation.m in Sources */ = {isa = PBXBuildFile; fileRef = D0363AFA199459DD00A80166 /* VBSimulation.m */; };
+		D06BC75719A1C1E400F09032 /* Log.m in Sources */ = {isa = PBXBuildFile; fileRef = D06BC75619A1C1E400F09032 /* Log.m */; };
+		D08DA7C1196159E30010C0CB /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D08DA7C0196159E30010C0CB /* QuartzCore.framework */; };
+		D08DA7C3196159EB0010C0CB /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D08DA7C2196159EB0010C0CB /* CoreMotion.framework */; };
+		D08DA7C5196159F40010C0CB /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D08DA7C4196159F40010C0CB /* CoreLocation.framework */; };
+		D08DA7C7196159FF0010C0CB /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D08DA7C6196159FF0010C0CB /* CoreBluetooth.framework */; };
+		D08DA7C919615A060010C0CB /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D08DA7C819615A060010C0CB /* MobileCoreServices.framework */; };
+		D08DA7CB19615A0D0010C0CB /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D08DA7CA19615A0D0010C0CB /* SystemConfiguration.framework */; };
+		D08DA7CD19615A150010C0CB /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D08DA7CC19615A150010C0CB /* CFNetwork.framework */; };
+		D08DA7CF19615A1C0010C0CB /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D08DA7CE19615A1C0010C0CB /* Security.framework */; };
+		D08DA7D119615A220010C0CB /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D08DA7D019615A220010C0CB /* CoreGraphics.framework */; };
+		D0FA02AA19AEE65F00818657 /* MACoordinate.m in Sources */ = {isa = PBXBuildFile; fileRef = D0FA02A919AEE65F00818657 /* MACoordinate.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D015B64E1960F27C00D03BF8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D015B6301960F27C00D03BF8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D015B6371960F27C00D03BF8;
+			remoteInfo = VBIPS;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		D015B6361960F27C00D03BF8 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+				D015B6411960F27C00D03BF8 /* VBIPS.h in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		C57F499C1AB3E0FE0053EAB0 /* HeadingInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeadingInfo.h; sourceTree = "<group>"; };
+		C57F499D1AB3E0FE0053EAB0 /* HeadingInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HeadingInfo.m; sourceTree = "<group>"; };
+		C5FF3D8B1AADBD9C009D9FAE /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		D015B6381960F27C00D03BF8 /* libVBIPS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libVBIPS.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		D015B63B1960F27C00D03BF8 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		D015B63F1960F27C00D03BF8 /* VBIPS-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "VBIPS-Prefix.pch"; sourceTree = "<group>"; };
+		D015B6401960F27C00D03BF8 /* VBIPS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VBIPS.h; sourceTree = "<group>"; };
+		D015B6421960F27C00D03BF8 /* VBIPS.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VBIPS.m; sourceTree = "<group>"; };
+		D015B6481960F27C00D03BF8 /* VBIPSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VBIPSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D015B6531960F27C00D03BF8 /* VBIPSTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "VBIPSTests-Info.plist"; sourceTree = "<group>"; };
+		D015B6551960F27C00D03BF8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		D015B6571960F27C00D03BF8 /* VBIPSTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VBIPSTests.m; sourceTree = "<group>"; };
+		D015B6611960F2F000D03BF8 /* SLIndoorLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SLIndoorLocation.framework; path = VBIPS/framework/SLIndoorLocation.framework; sourceTree = "<group>"; };
+		D015B6691960F3E000D03BF8 /* SLIPS.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SLIPS.h; sourceTree = "<group>"; };
+		D015B66A1960F3E000D03BF8 /* SLIPS.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SLIPS.m; sourceTree = "<group>"; };
+		D015B66D1960F80D00D03BF8 /* BaseIPS.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseIPS.h; sourceTree = "<group>"; };
+		D015B66E1960F80D00D03BF8 /* BaseIPS.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseIPS.m; sourceTree = "<group>"; };
+		D0238D4A196B84B200C68369 /* BeaconIPS.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BeaconIPS.h; sourceTree = "<group>"; };
+		D0238D4B196B84B200C68369 /* BeaconIPS.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BeaconIPS.m; sourceTree = "<group>"; };
+		D02BB9C21963DE4600A06CDA /* MAVector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MAVector.h; sourceTree = "<group>"; };
+		D0363AF9199459DD00A80166 /* VBSimulation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VBSimulation.h; sourceTree = "<group>"; };
+		D0363AFA199459DD00A80166 /* VBSimulation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VBSimulation.m; sourceTree = "<group>"; };
+		D06BC75519A1C1E400F09032 /* Log.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Log.h; sourceTree = "<group>"; };
+		D06BC75619A1C1E400F09032 /* Log.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Log.m; sourceTree = "<group>"; };
+		D08DA7C0196159E30010C0CB /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		D08DA7C2196159EB0010C0CB /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
+		D08DA7C4196159F40010C0CB /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		D08DA7C6196159FF0010C0CB /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
+		D08DA7C819615A060010C0CB /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		D08DA7CA19615A0D0010C0CB /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		D08DA7CC19615A150010C0CB /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		D08DA7CE19615A1C0010C0CB /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		D08DA7D019615A220010C0CB /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		D0FA02A519AEBD6400818657 /* MACoordinate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MACoordinate.h; sourceTree = "<group>"; };
+		D0FA02A919AEE65F00818657 /* MACoordinate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MACoordinate.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D015B6351960F27C00D03BF8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C5FF3D8C1AADBD9C009D9FAE /* UIKit.framework in Frameworks */,
+				D08DA7D119615A220010C0CB /* CoreGraphics.framework in Frameworks */,
+				D08DA7CF19615A1C0010C0CB /* Security.framework in Frameworks */,
+				D08DA7CD19615A150010C0CB /* CFNetwork.framework in Frameworks */,
+				D08DA7CB19615A0D0010C0CB /* SystemConfiguration.framework in Frameworks */,
+				D08DA7C919615A060010C0CB /* MobileCoreServices.framework in Frameworks */,
+				D08DA7C7196159FF0010C0CB /* CoreBluetooth.framework in Frameworks */,
+				D08DA7C5196159F40010C0CB /* CoreLocation.framework in Frameworks */,
+				D08DA7C3196159EB0010C0CB /* CoreMotion.framework in Frameworks */,
+				D08DA7C1196159E30010C0CB /* QuartzCore.framework in Frameworks */,
+				D015B6621960F2F000D03BF8 /* SLIndoorLocation.framework in Frameworks */,
+				D015B63C1960F27C00D03BF8 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D015B6451960F27C00D03BF8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D015B6501960F27C00D03BF8 /* libVBIPS.a in Frameworks */,
+				D015B64B1960F27C00D03BF8 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D015B62F1960F27C00D03BF8 = {
+			isa = PBXGroup;
+			children = (
+				D015B63D1960F27C00D03BF8 /* VBIPS */,
+				D015B6511960F27C00D03BF8 /* VBIPSTests */,
+				D015B63A1960F27C00D03BF8 /* Frameworks */,
+				D015B6391960F27C00D03BF8 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D015B6391960F27C00D03BF8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D015B6381960F27C00D03BF8 /* libVBIPS.a */,
+				D015B6481960F27C00D03BF8 /* VBIPSTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D015B63A1960F27C00D03BF8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C5FF3D8B1AADBD9C009D9FAE /* UIKit.framework */,
+				D08DA7D019615A220010C0CB /* CoreGraphics.framework */,
+				D08DA7CE19615A1C0010C0CB /* Security.framework */,
+				D08DA7CC19615A150010C0CB /* CFNetwork.framework */,
+				D08DA7CA19615A0D0010C0CB /* SystemConfiguration.framework */,
+				D08DA7C819615A060010C0CB /* MobileCoreServices.framework */,
+				D08DA7C6196159FF0010C0CB /* CoreBluetooth.framework */,
+				D08DA7C4196159F40010C0CB /* CoreLocation.framework */,
+				D08DA7C2196159EB0010C0CB /* CoreMotion.framework */,
+				D08DA7C0196159E30010C0CB /* QuartzCore.framework */,
+				D015B6611960F2F000D03BF8 /* SLIndoorLocation.framework */,
+				D015B63B1960F27C00D03BF8 /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D015B63D1960F27C00D03BF8 /* VBIPS */ = {
+			isa = PBXGroup;
+			children = (
+				D0FA02A919AEE65F00818657 /* MACoordinate.m */,
+				D02BB9C21963DE4600A06CDA /* MAVector.h */,
+				D015B66D1960F80D00D03BF8 /* BaseIPS.h */,
+				D015B66E1960F80D00D03BF8 /* BaseIPS.m */,
+				D015B6691960F3E000D03BF8 /* SLIPS.h */,
+				D015B66A1960F3E000D03BF8 /* SLIPS.m */,
+				D015B63E1960F27C00D03BF8 /* Supporting Files */,
+				D015B6401960F27C00D03BF8 /* VBIPS.h */,
+				D015B6421960F27C00D03BF8 /* VBIPS.m */,
+				D0238D4A196B84B200C68369 /* BeaconIPS.h */,
+				D0238D4B196B84B200C68369 /* BeaconIPS.m */,
+				D0363AF9199459DD00A80166 /* VBSimulation.h */,
+				D0363AFA199459DD00A80166 /* VBSimulation.m */,
+				D06BC75519A1C1E400F09032 /* Log.h */,
+				D06BC75619A1C1E400F09032 /* Log.m */,
+				D0FA02A519AEBD6400818657 /* MACoordinate.h */,
+				C57F499C1AB3E0FE0053EAB0 /* HeadingInfo.h */,
+				C57F499D1AB3E0FE0053EAB0 /* HeadingInfo.m */,
+			);
+			path = VBIPS;
+			sourceTree = "<group>";
+		};
+		D015B63E1960F27C00D03BF8 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D015B63F1960F27C00D03BF8 /* VBIPS-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D015B6511960F27C00D03BF8 /* VBIPSTests */ = {
+			isa = PBXGroup;
+			children = (
+				D015B6571960F27C00D03BF8 /* VBIPSTests.m */,
+				D015B6521960F27C00D03BF8 /* Supporting Files */,
+			);
+			path = VBIPSTests;
+			sourceTree = "<group>";
+		};
+		D015B6521960F27C00D03BF8 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D015B6531960F27C00D03BF8 /* VBIPSTests-Info.plist */,
+				D015B6541960F27C00D03BF8 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D015B6371960F27C00D03BF8 /* VBIPS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D015B65B1960F27C00D03BF8 /* Build configuration list for PBXNativeTarget "VBIPS" */;
+			buildPhases = (
+				D015B6341960F27C00D03BF8 /* Sources */,
+				D015B6351960F27C00D03BF8 /* Frameworks */,
+				D015B6361960F27C00D03BF8 /* CopyFiles */,
+				D0CCD0291ADC9A0B0009E52E /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = VBIPS;
+			productName = VBIPS;
+			productReference = D015B6381960F27C00D03BF8 /* libVBIPS.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		D015B6471960F27C00D03BF8 /* VBIPSTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D015B65E1960F27C00D03BF8 /* Build configuration list for PBXNativeTarget "VBIPSTests" */;
+			buildPhases = (
+				D015B6441960F27C00D03BF8 /* Sources */,
+				D015B6451960F27C00D03BF8 /* Frameworks */,
+				D015B6461960F27C00D03BF8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D015B64F1960F27C00D03BF8 /* PBXTargetDependency */,
+			);
+			name = VBIPSTests;
+			productName = VBIPSTests;
+			productReference = D015B6481960F27C00D03BF8 /* VBIPSTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D015B6301960F27C00D03BF8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "___FULLUSERNAME___";
+			};
+			buildConfigurationList = D015B6331960F27C00D03BF8 /* Build configuration list for PBXProject "VBIPS" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = D015B62F1960F27C00D03BF8;
+			productRefGroup = D015B6391960F27C00D03BF8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D015B6371960F27C00D03BF8 /* VBIPS */,
+				D015B6471960F27C00D03BF8 /* VBIPSTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D015B6461960F27C00D03BF8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D015B6561960F27C00D03BF8 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		D0CCD0291ADC9A0B0009E52E /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "##########################################\n#\n# c.f. http://stackoverflow.com/questions/3520977/build-fat-static-library-device-simulator-using-xcode-and-sdk-4\n#\n# Version 2.7\n#\n# Latest Change:\n# - Supports iPhone 5 / iPod Touch 5 (uses Apple's workaround to lipo bug)\n#\n# Purpose:\n#   Automatically create a Universal static library for iPhone + iPad + iPhone Simulator from within XCode\n#\n# Author: Adam Martin - http://twitter.com/redglassesapps\n# Based on: original script from Eonil (main changes: Eonil's script WILL NOT WORK in Xcode GUI - it WILL CRASH YOUR COMPUTER)\n#\n\nset -e\nset -o pipefail\n\n#################[ Tests: helps workaround any future bugs in Xcode ]########\n#\nDEBUG_THIS_SCRIPT=\"true\"\n\nif [ $DEBUG_THIS_SCRIPT = \"true\" ]\nthen\necho \"########### TESTS #############\"\necho \"Use the following variables when debugging this script; note that they may change on recursions\"\necho \"BUILD_DIR = $BUILD_DIR\"\necho \"BUILD_ROOT = $BUILD_ROOT\"\necho \"CONFIGURATION_BUILD_DIR = $CONFIGURATION_BUILD_DIR\"\necho \"BUILT_PRODUCTS_DIR = $BUILT_PRODUCTS_DIR\"\necho \"CONFIGURATION_TEMP_DIR = $CONFIGURATION_TEMP_DIR\"\necho \"TARGET_BUILD_DIR = $TARGET_BUILD_DIR\"\nfi\n\n#####################[ part 1 ]##################\n# First, work out the BASESDK version number (NB: Apple ought to report this, but they hide it)\n#    (incidental: searching for substrings in sh is a nightmare! Sob)\n\nSDK_VERSION=$(echo ${SDK_NAME} | grep -o '.\\{3\\}$')\n\n# Next, work out if we're in SIM or DEVICE\n\nif [ ${PLATFORM_NAME} = \"iphonesimulator\" ]\nthen\nOTHER_SDK_TO_BUILD=iphoneos${SDK_VERSION}\nelse\nOTHER_SDK_TO_BUILD=iphonesimulator${SDK_VERSION}\nfi\n\necho \"XCode has selected SDK: ${PLATFORM_NAME} with version: ${SDK_VERSION} (although back-targetting: ${IPHONEOS_DEPLOYMENT_TARGET})\"\necho \"...therefore, OTHER_SDK_TO_BUILD = ${OTHER_SDK_TO_BUILD}\"\n#\n#####################[ end of part 1 ]##################\n\n#####################[ part 2 ]##################\n#\n# IF this is the original invocation, invoke WHATEVER other builds are required\n#\n# Xcode is already building ONE target...\n#\n# ...but this is a LIBRARY, so Apple is wrong to set it to build just one.\n# ...we need to build ALL targets\n# ...we MUST NOT re-build the target that is ALREADY being built: Xcode WILL CRASH YOUR COMPUTER if you try this (infinite recursion!)\n#\n#\n# So: build ONLY the missing platforms/configurations.\n\nif [ \"true\" == ${ALREADYINVOKED:-false} ]\nthen\necho \"RECURSION: I am NOT the root invocation, so I'm NOT going to recurse\"\nelse\n# CRITICAL:\n# Prevent infinite recursion (Xcode sucks)\nexport ALREADYINVOKED=\"true\"\n\necho \"RECURSION: I am the root ... recursing all missing build targets NOW...\"\necho \"RECURSION: ...about to invoke: xcodebuild -configuration \\\"${CONFIGURATION}\\\" -project \\\"${PROJECT_NAME}.xcodeproj\\\" -target \\\"${TARGET_NAME}\\\" -sdk \\\"${OTHER_SDK_TO_BUILD}\\\" ${ACTION} RUN_CLANG_STATIC_ANALYZER=NO\" BUILD_DIR=\\\"${BUILD_DIR}\\\" BUILD_ROOT=\\\"${BUILD_ROOT}\\\" SYMROOT=\\\"${SYMROOT}\\\"\n\nxcodebuild -configuration \"${CONFIGURATION}\" -project \"${PROJECT_NAME}.xcodeproj\" -target \"${TARGET_NAME}\" -sdk \"${OTHER_SDK_TO_BUILD}\" ${ACTION} RUN_CLANG_STATIC_ANALYZER=NO BUILD_DIR=\"${BUILD_DIR}\" BUILD_ROOT=\"${BUILD_ROOT}\" SYMROOT=\"${SYMROOT}\"\n\nACTION=\"build\"\n\n#Merge all platform binaries as a fat binary for each configurations.\n\n# Calculate where the (multiple) built files are coming from:\nCURRENTCONFIG_DEVICE_DIR=${SYMROOT}/${CONFIGURATION}-iphoneos\nCURRENTCONFIG_SIMULATOR_DIR=${SYMROOT}/${CONFIGURATION}-iphonesimulator\n\necho \"Taking device build from: ${CURRENTCONFIG_DEVICE_DIR}\"\necho \"Taking simulator build from: ${CURRENTCONFIG_SIMULATOR_DIR}\"\n\nCREATING_UNIVERSAL_DIR=${SYMROOT}/${CONFIGURATION}-universal\n#CREATING_UNIVERSAL_DIR=\"/Applications/vbLib/${PROJECT_NAME}/\"\n\necho \"...I will output a universal build to: ${CREATING_UNIVERSAL_DIR}\"\n\n# ... remove the products of previous runs of this script\n#      NB: this directory is ONLY created by this script - it should be safe to delete!\n\nrm -rf \"${CREATING_UNIVERSAL_DIR}\"\nmkdir \"${CREATING_UNIVERSAL_DIR}\"\n\n#\necho \"lipo: for current configuration (${CONFIGURATION}) creating output file: ${CREATING_UNIVERSAL_DIR}/${EXECUTABLE_NAME}\"\nxcrun -sdk iphoneos lipo -create -output \"${CREATING_UNIVERSAL_DIR}/${EXECUTABLE_NAME}\" \"${CURRENTCONFIG_DEVICE_DIR}/${EXECUTABLE_NAME}\" \"${CURRENTCONFIG_SIMULATOR_DIR}/${EXECUTABLE_NAME}\"\n\n#########\n#\n# Added: StackOverflow suggestion to also copy \"include\" files\n#    (untested, but should work OK)\n#\necho \"Fetching headers from ${PUBLIC_HEADERS_FOLDER_PATH}\"\necho \"  (if you embed your library project in another project, you will need to add\"\necho \"   a \"User Search Headers\" build setting of: (NB INCLUDE THE DOUBLE QUOTES BELOW!)\"\necho '        \"$(TARGET_BUILD_DIR)/usr/local/include/\"'\nif [ -d \"${CURRENTCONFIG_DEVICE_DIR}${PUBLIC_HEADERS_FOLDER_PATH}\" ]\nthen\nmkdir -p \"${CREATING_UNIVERSAL_DIR}${PUBLIC_HEADERS_FOLDER_PATH}\"\n# * needs to be outside the double quotes?\ncp -r \"${CURRENTCONFIG_DEVICE_DIR}${PUBLIC_HEADERS_FOLDER_PATH}\"* \"${CREATING_UNIVERSAL_DIR}${PUBLIC_HEADERS_FOLDER_PATH}\"\nfi\nfi";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D015B6341960F27C00D03BF8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D0FA02AA19AEE65F00818657 /* MACoordinate.m in Sources */,
+				D06BC75719A1C1E400F09032 /* Log.m in Sources */,
+				D015B6431960F27C00D03BF8 /* VBIPS.m in Sources */,
+				D015B66F1960F80D00D03BF8 /* BaseIPS.m in Sources */,
+				C57F499E1AB3E0FE0053EAB0 /* HeadingInfo.m in Sources */,
+				D0238D4C196B84B200C68369 /* BeaconIPS.m in Sources */,
+				D015B66B1960F3E000D03BF8 /* SLIPS.m in Sources */,
+				D0363AFB199459DD00A80166 /* VBSimulation.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D015B6441960F27C00D03BF8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D015B6581960F27C00D03BF8 /* VBIPSTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D015B64F1960F27C00D03BF8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D015B6371960F27C00D03BF8 /* VBIPS */;
+			targetProxy = D015B64E1960F27C00D03BF8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D015B6541960F27C00D03BF8 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D015B6551960F27C00D03BF8 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D015B6591960F27C00D03BF8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = NO;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		D015B65A1960F27C00D03BF8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D015B65C1960F27C00D03BF8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (
+					"$(ARCHS_STANDARD)",
+					armv7s,
+					i386,
+					x86_64,
+				);
+				CODE_SIGN_IDENTITY = "iPhone Developer: BYEONG-HEE LEE (73W56L7YHF)";
+				DSTROOT = /tmp/VBIPS.dst;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/VBIPS/framework",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "VBIPS/VBIPS-Prefix.pch";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "68F4A4F4-32E4-4FB0-A64C-92836A91D415";
+				SKIP_INSTALL = YES;
+				VALID_ARCHS = "arm64 armv7 armv7s";
+			};
+			name = Debug;
+		};
+		D015B65D1960F27C00D03BF8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (
+					"$(ARCHS_STANDARD)",
+					armv7s,
+					i386,
+					x86_64,
+				);
+				CODE_SIGN_IDENTITY = "iPhone Developer: BYEONG-HEE LEE (73W56L7YHF)";
+				DSTROOT = /tmp/VBIPS.dst;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/VBIPS/framework",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "VBIPS/VBIPS-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "68F4A4F4-32E4-4FB0-A64C-92836A91D415";
+				SKIP_INSTALL = YES;
+				VALID_ARCHS = "arm64 armv7 armv7s";
+			};
+			name = Release;
+		};
+		D015B65F1960F27C00D03BF8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "VBIPS/VBIPS-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "VBIPSTests/VBIPSTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		D015B6601960F27C00D03BF8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "VBIPS/VBIPS-Prefix.pch";
+				INFOPLIST_FILE = "VBIPSTests/VBIPSTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D015B6331960F27C00D03BF8 /* Build configuration list for PBXProject "VBIPS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D015B6591960F27C00D03BF8 /* Debug */,
+				D015B65A1960F27C00D03BF8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D015B65B1960F27C00D03BF8 /* Build configuration list for PBXNativeTarget "VBIPS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D015B65C1960F27C00D03BF8 /* Debug */,
+				D015B65D1960F27C00D03BF8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D015B65E1960F27C00D03BF8 /* Build configuration list for PBXNativeTarget "VBIPSTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D015B65F1960F27C00D03BF8 /* Debug */,
+				D015B6601960F27C00D03BF8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D015B6301960F27C00D03BF8 /* Project object */;
+}

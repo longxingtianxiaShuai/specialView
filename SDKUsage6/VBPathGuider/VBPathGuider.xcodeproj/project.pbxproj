@@ -1,0 +1,473 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D01B7CC219A47B3C00B3AC90 /* MapMatching.m in Sources */ = {isa = PBXBuildFile; fileRef = D01B7CC119A47B3C00B3AC90 /* MapMatching.m */; };
+		D01B7CC719A47D3900B3AC90 /* VBPathEdge.m in Sources */ = {isa = PBXBuildFile; fileRef = D01B7CC319A47D3900B3AC90 /* VBPathEdge.m */; };
+		D01B7CC819A47D3900B3AC90 /* VBPathNode.m in Sources */ = {isa = PBXBuildFile; fileRef = D01B7CC519A47D3900B3AC90 /* VBPathNode.m */; };
+		D060D45619581FDD00E4A66D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D060D45519581FDD00E4A66D /* Foundation.framework */; };
+		D060D45B19581FDD00E4A66D /* VBPathGuider.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = D060D45A19581FDD00E4A66D /* VBPathGuider.h */; };
+		D060D45D19581FDD00E4A66D /* VBPathGuider.mm in Sources */ = {isa = PBXBuildFile; fileRef = D060D45C19581FDD00E4A66D /* VBPathGuider.mm */; };
+		D060D46419581FDD00E4A66D /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D060D46319581FDD00E4A66D /* XCTest.framework */; };
+		D060D46519581FDD00E4A66D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D060D45519581FDD00E4A66D /* Foundation.framework */; };
+		D060D46719581FDD00E4A66D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D060D46619581FDD00E4A66D /* UIKit.framework */; };
+		D060D46A19581FDD00E4A66D /* libVBPathGuider.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D060D45219581FDD00E4A66D /* libVBPathGuider.a */; };
+		D060D47019581FDD00E4A66D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D060D46E19581FDD00E4A66D /* InfoPlist.strings */; };
+		D060D47219581FDD00E4A66D /* VBPathGuiderTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D060D47119581FDD00E4A66D /* VBPathGuiderTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D060D46819581FDD00E4A66D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D060D44A19581FDD00E4A66D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D060D45119581FDD00E4A66D;
+			remoteInfo = VBPathGuider;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		D060D45019581FDD00E4A66D /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+				D060D45B19581FDD00E4A66D /* VBPathGuider.h in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		D01B7CC019A47B3C00B3AC90 /* MapMatching.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapMatching.h; sourceTree = "<group>"; };
+		D01B7CC119A47B3C00B3AC90 /* MapMatching.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapMatching.m; sourceTree = "<group>"; };
+		D01B7CC319A47D3900B3AC90 /* VBPathEdge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VBPathEdge.m; sourceTree = "<group>"; };
+		D01B7CC419A47D3900B3AC90 /* VBPathNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VBPathNode.h; sourceTree = "<group>"; };
+		D01B7CC519A47D3900B3AC90 /* VBPathNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VBPathNode.m; sourceTree = "<group>"; };
+		D01B7CC619A47D3900B3AC90 /* VBPathEdge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VBPathEdge.h; sourceTree = "<group>"; };
+		D04A8551195D2C6100EAFA4F /* MAVector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MAVector.h; sourceTree = "<group>"; };
+		D060D45219581FDD00E4A66D /* libVBPathGuider.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libVBPathGuider.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		D060D45519581FDD00E4A66D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		D060D45919581FDD00E4A66D /* VBPathGuider-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "VBPathGuider-Prefix.pch"; sourceTree = "<group>"; };
+		D060D45A19581FDD00E4A66D /* VBPathGuider.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VBPathGuider.h; sourceTree = "<group>"; };
+		D060D45C19581FDD00E4A66D /* VBPathGuider.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = VBPathGuider.mm; sourceTree = "<group>"; };
+		D060D46219581FDD00E4A66D /* VBPathGuiderTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VBPathGuiderTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D060D46319581FDD00E4A66D /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		D060D46619581FDD00E4A66D /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		D060D46D19581FDD00E4A66D /* VBPathGuiderTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "VBPathGuiderTests-Info.plist"; sourceTree = "<group>"; };
+		D060D46F19581FDD00E4A66D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		D060D47119581FDD00E4A66D /* VBPathGuiderTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VBPathGuiderTests.m; sourceTree = "<group>"; };
+		D060D47B19581FF900E4A66D /* Vector.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Vector.hpp; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D060D44F19581FDD00E4A66D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D060D45619581FDD00E4A66D /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D060D45F19581FDD00E4A66D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D060D46A19581FDD00E4A66D /* libVBPathGuider.a in Frameworks */,
+				D060D46419581FDD00E4A66D /* XCTest.framework in Frameworks */,
+				D060D46719581FDD00E4A66D /* UIKit.framework in Frameworks */,
+				D060D46519581FDD00E4A66D /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D060D44919581FDD00E4A66D = {
+			isa = PBXGroup;
+			children = (
+				D060D45719581FDD00E4A66D /* VBPathGuider */,
+				D060D46B19581FDD00E4A66D /* VBPathGuiderTests */,
+				D060D45419581FDD00E4A66D /* Frameworks */,
+				D060D45319581FDD00E4A66D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D060D45319581FDD00E4A66D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D060D45219581FDD00E4A66D /* libVBPathGuider.a */,
+				D060D46219581FDD00E4A66D /* VBPathGuiderTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D060D45419581FDD00E4A66D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D060D45519581FDD00E4A66D /* Foundation.framework */,
+				D060D46319581FDD00E4A66D /* XCTest.framework */,
+				D060D46619581FDD00E4A66D /* UIKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D060D45719581FDD00E4A66D /* VBPathGuider */ = {
+			isa = PBXGroup;
+			children = (
+				D01B7CC019A47B3C00B3AC90 /* MapMatching.h */,
+				D01B7CC119A47B3C00B3AC90 /* MapMatching.m */,
+				D04A8551195D2C6100EAFA4F /* MAVector.h */,
+				D060D45819581FDD00E4A66D /* Supporting Files */,
+				D01B7CC619A47D3900B3AC90 /* VBPathEdge.h */,
+				D01B7CC319A47D3900B3AC90 /* VBPathEdge.m */,
+				D060D45A19581FDD00E4A66D /* VBPathGuider.h */,
+				D060D45C19581FDD00E4A66D /* VBPathGuider.mm */,
+				D01B7CC419A47D3900B3AC90 /* VBPathNode.h */,
+				D01B7CC519A47D3900B3AC90 /* VBPathNode.m */,
+				D060D47B19581FF900E4A66D /* Vector.hpp */,
+			);
+			path = VBPathGuider;
+			sourceTree = "<group>";
+		};
+		D060D45819581FDD00E4A66D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D060D45919581FDD00E4A66D /* VBPathGuider-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D060D46B19581FDD00E4A66D /* VBPathGuiderTests */ = {
+			isa = PBXGroup;
+			children = (
+				D060D47119581FDD00E4A66D /* VBPathGuiderTests.m */,
+				D060D46C19581FDD00E4A66D /* Supporting Files */,
+			);
+			path = VBPathGuiderTests;
+			sourceTree = "<group>";
+		};
+		D060D46C19581FDD00E4A66D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D060D46D19581FDD00E4A66D /* VBPathGuiderTests-Info.plist */,
+				D060D46E19581FDD00E4A66D /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D060D45119581FDD00E4A66D /* VBPathGuider */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D060D47519581FDD00E4A66D /* Build configuration list for PBXNativeTarget "VBPathGuider" */;
+			buildPhases = (
+				D060D44E19581FDD00E4A66D /* Sources */,
+				D060D44F19581FDD00E4A66D /* Frameworks */,
+				D060D45019581FDD00E4A66D /* CopyFiles */,
+				D0CD5A7E1ADB5BD0007E2781 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = VBPathGuider;
+			productName = VBPathGuider;
+			productReference = D060D45219581FDD00E4A66D /* libVBPathGuider.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		D060D46119581FDD00E4A66D /* VBPathGuiderTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D060D47819581FDD00E4A66D /* Build configuration list for PBXNativeTarget "VBPathGuiderTests" */;
+			buildPhases = (
+				D060D45E19581FDD00E4A66D /* Sources */,
+				D060D45F19581FDD00E4A66D /* Frameworks */,
+				D060D46019581FDD00E4A66D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D060D46919581FDD00E4A66D /* PBXTargetDependency */,
+			);
+			name = VBPathGuiderTests;
+			productName = VBPathGuiderTests;
+			productReference = D060D46219581FDD00E4A66D /* VBPathGuiderTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D060D44A19581FDD00E4A66D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "___FULLUSERNAME___";
+			};
+			buildConfigurationList = D060D44D19581FDD00E4A66D /* Build configuration list for PBXProject "VBPathGuider" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = D060D44919581FDD00E4A66D;
+			productRefGroup = D060D45319581FDD00E4A66D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D060D45119581FDD00E4A66D /* VBPathGuider */,
+				D060D46119581FDD00E4A66D /* VBPathGuiderTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D060D46019581FDD00E4A66D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D060D47019581FDD00E4A66D /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		D0CD5A7E1ADB5BD0007E2781 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 12;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "##########################################\n#\n# c.f. http://stackoverflow.com/questions/3520977/build-fat-static-library-device-simulator-using-xcode-and-sdk-4\n#\n# Version 2.7\n#\n# Latest Change:\n# - Supports iPhone 5 / iPod Touch 5 (uses Apple's workaround to lipo bug)\n#\n# Purpose:\n#   Automatically create a Universal static library for iPhone + iPad + iPhone Simulator from within XCode\n#\n# Author: Adam Martin - http://twitter.com/redglassesapps\n# Based on: original script from Eonil (main changes: Eonil's script WILL NOT WORK in Xcode GUI - it WILL CRASH YOUR COMPUTER)\n#\n\nset -e\nset -o pipefail\n\n#################[ Tests: helps workaround any future bugs in Xcode ]########\n#\nDEBUG_THIS_SCRIPT=\"true\"\n\nif [ $DEBUG_THIS_SCRIPT = \"true\" ]\nthen\necho \"########### TESTS #############\"\necho \"Use the following variables when debugging this script; note that they may change on recursions\"\necho \"BUILD_DIR = $BUILD_DIR\"\necho \"BUILD_ROOT = $BUILD_ROOT\"\necho \"CONFIGURATION_BUILD_DIR = $CONFIGURATION_BUILD_DIR\"\necho \"BUILT_PRODUCTS_DIR = $BUILT_PRODUCTS_DIR\"\necho \"CONFIGURATION_TEMP_DIR = $CONFIGURATION_TEMP_DIR\"\necho \"TARGET_BUILD_DIR = $TARGET_BUILD_DIR\"\nfi\n\n#####################[ part 1 ]##################\n# First, work out the BASESDK version number (NB: Apple ought to report this, but they hide it)\n#    (incidental: searching for substrings in sh is a nightmare! Sob)\n\nSDK_VERSION=$(echo ${SDK_NAME} | grep -o '.\\{4\\}$')\n\n# Next, work out if we're in SIM or DEVICE\n\nif [ ${PLATFORM_NAME} = \"iphonesimulator\" ]\nthen\nOTHER_SDK_TO_BUILD=iphoneos${SDK_VERSION}\nelse\nOTHER_SDK_TO_BUILD=iphonesimulator${SDK_VERSION}\nfi\n\necho \"XCode has selected SDK: ${PLATFORM_NAME} with version: ${SDK_VERSION} (although back-targetting: ${IPHONEOS_DEPLOYMENT_TARGET})\"\necho \"...therefore, OTHER_SDK_TO_BUILD = ${OTHER_SDK_TO_BUILD}\"\n#\n#####################[ end of part 1 ]##################\n\n#####################[ part 2 ]##################\n#\n# IF this is the original invocation, invoke WHATEVER other builds are required\n#\n# Xcode is already building ONE target...\n#\n# ...but this is a LIBRARY, so Apple is wrong to set it to build just one.\n# ...we need to build ALL targets\n# ...we MUST NOT re-build the target that is ALREADY being built: Xcode WILL CRASH YOUR COMPUTER if you try this (infinite recursion!)\n#\n#\n# So: build ONLY the missing platforms/configurations.\n\nif [ \"true\" == ${ALREADYINVOKED:-false} ]\nthen\necho \"RECURSION: I am NOT the root invocation, so I'm NOT going to recurse\"\nelse\n# CRITICAL:\n# Prevent infinite recursion (Xcode sucks)\nexport ALREADYINVOKED=\"true\"\n\necho \"RECURSION: I am the root ... recursing all missing build targets NOW...\"\necho \"RECURSION: ...about to invoke: xcodebuild -configuration \\\"${CONFIGURATION}\\\" -project \\\"${PROJECT_NAME}.xcodeproj\\\" -target \\\"${TARGET_NAME}\\\" -sdk \\\"${OTHER_SDK_TO_BUILD}\\\" ${ACTION} RUN_CLANG_STATIC_ANALYZER=NO\" BUILD_DIR=\\\"${BUILD_DIR}\\\" BUILD_ROOT=\\\"${BUILD_ROOT}\\\" SYMROOT=\\\"${SYMROOT}\\\"\n\nxcodebuild -configuration \"${CONFIGURATION}\" -project \"${PROJECT_NAME}.xcodeproj\" -target \"${TARGET_NAME}\" -sdk \"${OTHER_SDK_TO_BUILD}\" ${ACTION} RUN_CLANG_STATIC_ANALYZER=NO BUILD_DIR=\"${BUILD_DIR}\" BUILD_ROOT=\"${BUILD_ROOT}\" SYMROOT=\"${SYMROOT}\"\n\nACTION=\"build\"\n\n#Merge all platform binaries as a fat binary for each configurations.\n\n# Calculate where the (multiple) built files are coming from:\nCURRENTCONFIG_DEVICE_DIR=${SYMROOT}/${CONFIGURATION}-iphoneos\nCURRENTCONFIG_SIMULATOR_DIR=${SYMROOT}/${CONFIGURATION}-iphonesimulator\n\necho \"Taking device build from: ${CURRENTCONFIG_DEVICE_DIR}\"\necho \"Taking simulator build from: ${CURRENTCONFIG_SIMULATOR_DIR}\"\n\nCREATING_UNIVERSAL_DIR=${SYMROOT}/${CONFIGURATION}-universal\n#CREATING_UNIVERSAL_DIR=\"/Applications/vbLib/${PROJECT_NAME}/\"\n\necho \"...I will output a universal build to: ${CREATING_UNIVERSAL_DIR}\"\n\n# ... remove the products of previous runs of this script\n#      NB: this directory is ONLY created by this script - it should be safe to delete!\n\nrm -rf \"${CREATING_UNIVERSAL_DIR}\"\nmkdir \"${CREATING_UNIVERSAL_DIR}\"\n\n#\necho \"lipo: for current configuration (${CONFIGURATION}) creating output file: ${CREATING_UNIVERSAL_DIR}/${EXECUTABLE_NAME}\"\nxcrun -sdk iphoneos lipo -create -output \"${CREATING_UNIVERSAL_DIR}/${EXECUTABLE_NAME}\" \"${CURRENTCONFIG_DEVICE_DIR}/${EXECUTABLE_NAME}\" \"${CURRENTCONFIG_SIMULATOR_DIR}/${EXECUTABLE_NAME}\"\n\n#########\n#\n# Added: StackOverflow suggestion to also copy \"include\" files\n#    (untested, but should work OK)\n#\necho \"Fetching headers from ${PUBLIC_HEADERS_FOLDER_PATH}\"\necho \"  (if you embed your library project in another project, you will need to add\"\necho \"   a \"User Search Headers\" build setting of: (NB INCLUDE THE DOUBLE QUOTES BELOW!)\"\necho '        \"$(TARGET_BUILD_DIR)/usr/local/include/\"'\nif [ -d \"${CURRENTCONFIG_DEVICE_DIR}${PUBLIC_HEADERS_FOLDER_PATH}\" ]\nthen\nmkdir -p \"${CREATING_UNIVERSAL_DIR}${PUBLIC_HEADERS_FOLDER_PATH}\"\n# * needs to be outside the double quotes?\ncp -r \"${CURRENTCONFIG_DEVICE_DIR}${PUBLIC_HEADERS_FOLDER_PATH}\"* \"${CREATING_UNIVERSAL_DIR}${PUBLIC_HEADERS_FOLDER_PATH}\"\nfi\nfi";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D060D44E19581FDD00E4A66D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D01B7CC819A47D3900B3AC90 /* VBPathNode.m in Sources */,
+				D060D45D19581FDD00E4A66D /* VBPathGuider.mm in Sources */,
+				D01B7CC219A47B3C00B3AC90 /* MapMatching.m in Sources */,
+				D01B7CC719A47D3900B3AC90 /* VBPathEdge.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D060D45E19581FDD00E4A66D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D060D47219581FDD00E4A66D /* VBPathGuiderTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D060D46919581FDD00E4A66D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D060D45119581FDD00E4A66D /* VBPathGuider */;
+			targetProxy = D060D46819581FDD00E4A66D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D060D46E19581FDD00E4A66D /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D060D46F19581FDD00E4A66D /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D060D47319581FDD00E4A66D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		D060D47419581FDD00E4A66D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D060D47619581FDD00E4A66D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				DSTROOT = /tmp/VBPathGuider.dst;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "VBPathGuider/VBPathGuider-Prefix.pch";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				VALID_ARCHS = "arm64 armv7 armv7s i386 x86_64";
+			};
+			name = Debug;
+		};
+		D060D47719581FDD00E4A66D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				DSTROOT = /tmp/VBPathGuider.dst;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "VBPathGuider/VBPathGuider-Prefix.pch";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				VALID_ARCHS = "arm64 armv7 armv7s i386 x86_64";
+			};
+			name = Release;
+		};
+		D060D47919581FDD00E4A66D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "VBPathGuider/VBPathGuider-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "VBPathGuiderTests/VBPathGuiderTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		D060D47A19581FDD00E4A66D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "VBPathGuider/VBPathGuider-Prefix.pch";
+				INFOPLIST_FILE = "VBPathGuiderTests/VBPathGuiderTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D060D44D19581FDD00E4A66D /* Build configuration list for PBXProject "VBPathGuider" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D060D47319581FDD00E4A66D /* Debug */,
+				D060D47419581FDD00E4A66D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D060D47519581FDD00E4A66D /* Build configuration list for PBXNativeTarget "VBPathGuider" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D060D47619581FDD00E4A66D /* Debug */,
+				D060D47719581FDD00E4A66D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D060D47819581FDD00E4A66D /* Build configuration list for PBXNativeTarget "VBPathGuiderTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D060D47919581FDD00E4A66D /* Debug */,
+				D060D47A19581FDD00E4A66D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D060D44A19581FDD00E4A66D /* Project object */;
+}

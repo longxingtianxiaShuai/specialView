@@ -1,0 +1,920 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1003F3E2198A0C0800AD05FF /* vbPolyManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1003F3E0198A0C0800AD05FF /* vbPolyManager.cpp */; };
+		101A05F419873A3B002BC476 /* vbInstanceManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 101A05F019873A3B002BC476 /* vbInstanceManager.cpp */; };
+		101A05F519873A3B002BC476 /* vbMeshInstance.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 101A05F219873A3B002BC476 /* vbMeshInstance.cpp */; };
+		109678E019878D5B001A47CB /* vbInstanceFactory.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 109678DE19878D5B001A47CB /* vbInstanceFactory.cpp */; };
+		10E566731990A8F000070654 /* vbFlyingCameraControl.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 10E566711990A8F000070654 /* vbFlyingCameraControl.cpp */; };
+		10F87DE91988D32D00213FA4 /* geometry.cc in Sources */ = {isa = PBXBuildFile; fileRef = 10F87DDC1988D32D00213FA4 /* geometry.cc */; };
+		10F87DEA1988D32D00213FA4 /* geo_cdt.cc in Sources */ = {isa = PBXBuildFile; fileRef = 10F87DE01988D32D00213FA4 /* geo_cdt.cc */; };
+		10F87DEB1988D32D00213FA4 /* geo_advancing.cc in Sources */ = {isa = PBXBuildFile; fileRef = 10F87DE21988D32D00213FA4 /* geo_advancing.cc */; };
+		10F87DEC1988D32D00213FA4 /* geo_sweep.cc in Sources */ = {isa = PBXBuildFile; fileRef = 10F87DE41988D32D00213FA4 /* geo_sweep.cc */; };
+		10F87DED1988D32D00213FA4 /* geo_sweeper.cc in Sources */ = {isa = PBXBuildFile; fileRef = 10F87DE61988D32D00213FA4 /* geo_sweeper.cc */; };
+		10F87DF01988DFB600213FA4 /* vbPolygon.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 10F87DEE1988DFB600213FA4 /* vbPolygon.cpp */; };
+		1E15DB1618B1E98400CC208C /* vbViewInfoFinger_Planar3D.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1E15DB1518B1E98400CC208C /* vbViewInfoFinger_Planar3D.cpp */; };
+		57650FA718978D4400647760 /* vbViewInfoFinger_PalladiON.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 57650FA518978D4400647760 /* vbViewInfoFinger_PalladiON.cpp */; };
+		5787604C18697419008FE7DF /* vbColorCoder.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5787604A18697419008FE7DF /* vbColorCoder.cpp */; };
+		579F5F991856F111001C81C0 /* vbViewInfoFinger_ZoneView.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 579F5F981856F111001C81C0 /* vbViewInfoFinger_ZoneView.cpp */; };
+		6491456216533E9900A497B3 /* Projection.mm in Sources */ = {isa = PBXBuildFile; fileRef = 6491456116533E9900A497B3 /* Projection.mm */; };
+		C1C1B3D01A92BEA000A6CFCE /* vbMeshGroup.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C1C1B3CE1A92BEA000A6CFCE /* vbMeshGroup.cpp */; };
+		C1C1B3D31A92C0BF00A6CFCE /* vbMeshGroupManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C1C1B3D11A92C0BF00A6CFCE /* vbMeshGroupManager.cpp */; };
+		D80CE4C116DB5C9F005BC3D3 /* vbViewInfoFinger_PISA.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D80CE4BF16DB5C9F005BC3D3 /* vbViewInfoFinger_PISA.cpp */; };
+		D80CE4C416DB5CF2005BC3D3 /* vbViewInfoFinger_YawPitch.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D80CE4C216DB5CF2005BC3D3 /* vbViewInfoFinger_YawPitch.cpp */; };
+		D80CE4C716DB5D17005BC3D3 /* vbViewInfoFinger_STD1.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D80CE4C516DB5D16005BC3D3 /* vbViewInfoFinger_STD1.cpp */; };
+		D83338C116C9CA200052C551 /* vbAnimationCameraControl.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D83338BF16C9CA200052C551 /* vbAnimationCameraControl.cpp */; };
+		D843074916CB191A00CEB3B1 /* vbOrthogonalProjection.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D843074716CB191A00CEB3B1 /* vbOrthogonalProjection.cpp */; };
+		D85619D3172766B000F50DA6 /* vbViewInfoFinger_GongVueA.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D85619D2172766B000F50DA6 /* vbViewInfoFinger_GongVueA.cpp */; };
+		D859D0D9172A3C210067AF99 /* vbMovingForwardCameraControl.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D859D0D6172A3C200067AF99 /* vbMovingForwardCameraControl.cpp */; };
+		D85FC4DF16C0F730004D5CC3 /* vbCamera.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D85FC4DE16C0F730004D5CC3 /* vbCamera.cpp */; };
+		D85FC4E316C0FBE3004D5CC3 /* vbPerspectiveProjection.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D85FC4E116C0FBE3004D5CC3 /* vbPerspectiveProjection.cpp */; };
+		D85FC4E616C10754004D5CC3 /* vbICameraProjection.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D85FC4E516C10754004D5CC3 /* vbICameraProjection.cpp */; };
+		D87555AE16CE319700155E6D /* vbEdges.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D87555AC16CE319700155E6D /* vbEdges.cpp */; };
+		D887D9F416C33FCD0032E3BF /* vbMoveOrbitZoomCameraControl.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D887D9F216C33FCD0032E3BF /* vbMoveOrbitZoomCameraControl.cpp */; };
+		D887D9F816C344D20032E3BF /* vbRotateCameraControl.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D887D9F616C344D20032E3BF /* vbRotateCameraControl.cpp */; };
+		D887D9FB16C345AD0032E3BF /* vbMoveCameraControl.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D887D9F916C345AD0032E3BF /* vbMoveCameraControl.cpp */; };
+		D887DA0116C3671E0032E3BF /* vbHorizontalPanCameraControl.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D887D9FF16C3671E0032E3BF /* vbHorizontalPanCameraControl.cpp */; };
+		D887DA0416C371BB0032E3BF /* vbFreeCameraControl.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D887DA0216C371BA0032E3BF /* vbFreeCameraControl.cpp */; };
+		D8AB0FEF16C1E8A200DD659C /* vbCameraControl.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D8AB0FEE16C1E8A200DD659C /* vbCameraControl.cpp */; };
+		D8AB0FF416C1EA6800DD659C /* vbTrackCameraControl.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D8AB0FF216C1EA6800DD659C /* vbTrackCameraControl.cpp */; };
+		D8AB0FF816C24B1800DD659C /* vbFPSCameraControl.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D8AB0FF716C24B1800DD659C /* vbFPSCameraControl.cpp */; };
+		D8BBD1C31647A1FA00F30A21 /* ApplicationEngine.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DBCC8E55164027D4005B5108 /* ApplicationEngine.cpp */; };
+		D8BBD1C41647A1FA00F30A21 /* ResourceManager.mm in Sources */ = {isa = PBXBuildFile; fileRef = DBCC8E76164027D4005B5108 /* ResourceManager.mm */; };
+		D8BBD1C71647A1FA00F30A21 /* vbMe.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DBCC8E61164027D4005B5108 /* vbMe.cpp */; };
+		D8BBD1CA1647A1FA00F30A21 /* vbPOI.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DBCC8E69164027D4005B5108 /* vbPOI.cpp */; };
+		D8BBD1CB1647A1FA00F30A21 /* vbPOIFactory.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DBCC8E6B164027D4005B5108 /* vbPOIFactory.cpp */; };
+		D8BBD1CC1647A1FA00F30A21 /* vbPOIManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DBCC8E6D164027D4005B5108 /* vbPOIManager.cpp */; };
+		D8BBD1CD1647A1FA00F30A21 /* vbSpace.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DBCC8E6F164027D4005B5108 /* vbSpace.cpp */; };
+		D8BBD1CE1647A1FA00F30A21 /* RenderingBase.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DBCC8E72164027D4005B5108 /* RenderingBase.cpp */; };
+		D8BBD1CF1647A1FA00F30A21 /* RenderingEngine.ES1.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DBCC8E74164027D4005B5108 /* RenderingEngine.ES1.cpp */; };
+		D8BBD1D01647A1FA00F30A21 /* RenderingEngine.ES2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DBCC8E75164027D4005B5108 /* RenderingEngine.ES2.cpp */; };
+		D8BBD1D11647A1FA00F30A21 /* vbConfiguration.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DBCC8E7B164027D4005B5108 /* vbConfiguration.cpp */; };
+		D8BBD1D21647A1FA00F30A21 /* vbGeometry.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DBCC8E7E164027D4005B5108 /* vbGeometry.cpp */; };
+		D8BBD1D31647A1FA00F30A21 /* vbMaterial.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DBCC8E81164027D4005B5108 /* vbMaterial.cpp */; };
+		D8BBD1D41647A1FA00F30A21 /* vbMaterialFactory.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DBCC8E83164027D4005B5108 /* vbMaterialFactory.cpp */; };
+		D8BBD1D51647A1FA00F30A21 /* vbMaterialManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DBCC8E85164027D4005B5108 /* vbMaterialManager.cpp */; };
+		D8BBD1D61647A1FA00F30A21 /* vbMesh.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DBCC8E88164027D4005B5108 /* vbMesh.cpp */; };
+		D8BBD1D71647A1FA00F30A21 /* vbMeshFactory.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DBCC8E8A164027D4005B5108 /* vbMeshFactory.cpp */; };
+		D8BBD1D81647A1FA00F30A21 /* vbMeshManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DBCC8E8C164027D4005B5108 /* vbMeshManager.cpp */; };
+		D8BBD1D91647A1FA00F30A21 /* vbPath.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DBCC8E8F164027D4005B5108 /* vbPath.cpp */; };
+		D8BBD1DA1647A1FA00F30A21 /* vbPathManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DBCC8E91164027D4005B5108 /* vbPathManager.cpp */; };
+		D8BBD1DB1647A1FA00F30A21 /* vbViewInfo.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DBCC8E94164027D4005B5108 /* vbViewInfo.cpp */; };
+		D8BBD1DC1647A1FA00F30A21 /* vbViewInfoAnimation.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DBCC8E96164027D4005B5108 /* vbViewInfoAnimation.cpp */; };
+		D8BBD1DD1647A1FA00F30A21 /* vbViewInfoCalc.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DBCC8E97164027D4005B5108 /* vbViewInfoCalc.cpp */; };
+		D8BBD1DE1647A1FA00F30A21 /* vbViewInfoCamera.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DBCC8E98164027D4005B5108 /* vbViewInfoCamera.cpp */; };
+		D8BBD1DF1647A1FA00F30A21 /* vbViewInfoFinger.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DBCC8E99164027D4005B5108 /* vbViewInfoFinger.cpp */; };
+		D8BBD1E01647A1FA00F30A21 /* vbViewInfoNavi.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DBCC8E9A164027D4005B5108 /* vbViewInfoNavi.cpp */; };
+		D8BBD1E11647A1FA00F30A21 /* vbViewInfoProjection.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DBCC8E9B164027D4005B5108 /* vbViewInfoProjection.cpp */; };
+		D8BBD1E21647A1FA00F30A21 /* GLView.mm in Sources */ = {isa = PBXBuildFile; fileRef = DBCC8E9E164027D4005B5108 /* GLView.mm */; };
+		DB05567415E5BD2900FF83E2 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB05566A15E5BD0E00FF83E2 /* CoreGraphics.framework */; };
+		DB05567515E5BD2900FF83E2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB05566B15E5BD0E00FF83E2 /* Foundation.framework */; };
+		DB05567615E5BD2900FF83E2 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB05566C15E5BD0E00FF83E2 /* OpenGLES.framework */; };
+		DB05567715E5BD2900FF83E2 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB05566D15E5BD0E00FF83E2 /* QuartzCore.framework */; };
+		DB05567815E5BD2900FF83E2 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB05566E15E5BD0E00FF83E2 /* UIKit.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		DBED90EF15DCA25700327DCC /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/${PRODUCT_NAME}";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		1003F3E0198A0C0800AD05FF /* vbPolyManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = vbPolyManager.cpp; sourceTree = "<group>"; };
+		1003F3E1198A0C0800AD05FF /* vbPolyManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = vbPolyManager.h; sourceTree = "<group>"; };
+		101A05F019873A3B002BC476 /* vbInstanceManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = vbInstanceManager.cpp; path = vbInstance/vbInstanceManager.cpp; sourceTree = "<group>"; };
+		101A05F119873A3B002BC476 /* vbInstanceManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = vbInstanceManager.h; path = vbInstance/vbInstanceManager.h; sourceTree = "<group>"; };
+		101A05F219873A3B002BC476 /* vbMeshInstance.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = vbMeshInstance.cpp; path = vbInstance/vbMeshInstance.cpp; sourceTree = "<group>"; };
+		101A05F319873A3B002BC476 /* vbMeshInstance.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = vbMeshInstance.h; path = vbInstance/vbMeshInstance.h; sourceTree = "<group>"; };
+		1035E2B11985F062005D45A7 /* vbEnum.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = vbEnum.hpp; sourceTree = "<group>"; };
+		109678DE19878D5B001A47CB /* vbInstanceFactory.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = vbInstanceFactory.cpp; path = vbInstance/vbInstanceFactory.cpp; sourceTree = "<group>"; };
+		109678DF19878D5B001A47CB /* vbInstanceFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = vbInstanceFactory.h; path = vbInstance/vbInstanceFactory.h; sourceTree = "<group>"; };
+		10E566711990A8F000070654 /* vbFlyingCameraControl.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = vbFlyingCameraControl.cpp; sourceTree = "<group>"; };
+		10E566721990A8F000070654 /* vbFlyingCameraControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = vbFlyingCameraControl.h; sourceTree = "<group>"; };
+		10F87DDC1988D32D00213FA4 /* geometry.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = geometry.cc; sourceTree = "<group>"; };
+		10F87DDD1988D32D00213FA4 /* geometry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = geometry.h; sourceTree = "<group>"; };
+		10F87DDE1988D32D00213FA4 /* utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = utils.h; sourceTree = "<group>"; };
+		10F87DE01988D32D00213FA4 /* geo_cdt.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = geo_cdt.cc; sourceTree = "<group>"; };
+		10F87DE11988D32D00213FA4 /* geo_cdt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = geo_cdt.h; sourceTree = "<group>"; };
+		10F87DE21988D32D00213FA4 /* geo_advancing.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = geo_advancing.cc; sourceTree = "<group>"; };
+		10F87DE31988D32D00213FA4 /* geo_advancing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = geo_advancing.h; sourceTree = "<group>"; };
+		10F87DE41988D32D00213FA4 /* geo_sweep.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = geo_sweep.cc; sourceTree = "<group>"; };
+		10F87DE51988D32D00213FA4 /* geo_sweep.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = geo_sweep.h; sourceTree = "<group>"; };
+		10F87DE61988D32D00213FA4 /* geo_sweeper.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = geo_sweeper.cc; sourceTree = "<group>"; };
+		10F87DE71988D32D00213FA4 /* geo_sweeper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = geo_sweeper.h; sourceTree = "<group>"; };
+		10F87DE81988D32D00213FA4 /* tess.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tess.h; sourceTree = "<group>"; };
+		10F87DEE1988DFB600213FA4 /* vbPolygon.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = vbPolygon.cpp; sourceTree = "<group>"; };
+		10F87DEF1988DFB600213FA4 /* vbPolygon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = vbPolygon.h; sourceTree = "<group>"; };
+		1E15DB1518B1E98400CC208C /* vbViewInfoFinger_Planar3D.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = vbViewInfoFinger_Planar3D.cpp; sourceTree = "<group>"; };
+		57650FA518978D4400647760 /* vbViewInfoFinger_PalladiON.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = vbViewInfoFinger_PalladiON.cpp; sourceTree = "<group>"; };
+		5787604A18697419008FE7DF /* vbColorCoder.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = vbColorCoder.cpp; path = Picking/vbColorCoder.cpp; sourceTree = "<group>"; };
+		5787604B18697419008FE7DF /* vbColorCoder.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = vbColorCoder.hpp; path = Picking/vbColorCoder.hpp; sourceTree = "<group>"; };
+		579F5F981856F111001C81C0 /* vbViewInfoFinger_ZoneView.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = vbViewInfoFinger_ZoneView.cpp; sourceTree = "<group>"; };
+		6491456016533E9900A497B3 /* Projection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Projection.h; sourceTree = "<group>"; };
+		6491456116533E9900A497B3 /* Projection.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = Projection.mm; sourceTree = "<group>"; };
+		64D37230165232DE0024BABD /* GLViewDelegate2.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GLViewDelegate2.h; sourceTree = "<group>"; };
+		C1C1B3CE1A92BEA000A6CFCE /* vbMeshGroup.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = vbMeshGroup.cpp; path = VbMeshes/vbMeshGroup.cpp; sourceTree = "<group>"; };
+		C1C1B3CF1A92BEA000A6CFCE /* vbMeshGroup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = vbMeshGroup.h; path = VbMeshes/vbMeshGroup.h; sourceTree = "<group>"; };
+		C1C1B3D11A92C0BF00A6CFCE /* vbMeshGroupManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = vbMeshGroupManager.cpp; path = VbMeshes/vbMeshGroupManager.cpp; sourceTree = "<group>"; };
+		C1C1B3D21A92C0BF00A6CFCE /* vbMeshGroupManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = vbMeshGroupManager.h; path = VbMeshes/vbMeshGroupManager.h; sourceTree = "<group>"; };
+		D80CE4BF16DB5C9F005BC3D3 /* vbViewInfoFinger_PISA.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = vbViewInfoFinger_PISA.cpp; sourceTree = "<group>"; };
+		D80CE4C216DB5CF2005BC3D3 /* vbViewInfoFinger_YawPitch.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = vbViewInfoFinger_YawPitch.cpp; sourceTree = "<group>"; };
+		D80CE4C516DB5D16005BC3D3 /* vbViewInfoFinger_STD1.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = vbViewInfoFinger_STD1.cpp; sourceTree = "<group>"; };
+		D83338BF16C9CA200052C551 /* vbAnimationCameraControl.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = vbAnimationCameraControl.cpp; sourceTree = "<group>"; };
+		D83338C016C9CA200052C551 /* vbAnimationCameraControl.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = vbAnimationCameraControl.hpp; sourceTree = "<group>"; };
+		D843074716CB191A00CEB3B1 /* vbOrthogonalProjection.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = vbOrthogonalProjection.cpp; path = vbCamera/vbOrthogonalProjection.cpp; sourceTree = "<group>"; };
+		D843074816CB191A00CEB3B1 /* vbOrthogonalProjection.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = vbOrthogonalProjection.hpp; path = vbCamera/vbOrthogonalProjection.hpp; sourceTree = "<group>"; };
+		D85619D2172766B000F50DA6 /* vbViewInfoFinger_GongVueA.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = vbViewInfoFinger_GongVueA.cpp; sourceTree = "<group>"; };
+		D859D0D6172A3C200067AF99 /* vbMovingForwardCameraControl.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = vbMovingForwardCameraControl.cpp; path = vbCamera/vbMovingForwardCameraControl.cpp; sourceTree = "<group>"; };
+		D859D0D7172A3C210067AF99 /* vbMovingForwardCameraControl.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = vbMovingForwardCameraControl.hpp; path = vbCamera/vbMovingForwardCameraControl.hpp; sourceTree = "<group>"; };
+		D85FC4DB16C0F6E7004D5CC3 /* vbCamera.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = vbCamera.hpp; path = vbCamera/vbCamera.hpp; sourceTree = "<group>"; };
+		D85FC4DE16C0F730004D5CC3 /* vbCamera.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = vbCamera.cpp; path = vbCamera/vbCamera.cpp; sourceTree = "<group>"; };
+		D85FC4E016C0FBC0004D5CC3 /* vbPerspectiveProjection.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = vbPerspectiveProjection.hpp; path = vbCamera/vbPerspectiveProjection.hpp; sourceTree = "<group>"; };
+		D85FC4E116C0FBE3004D5CC3 /* vbPerspectiveProjection.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = vbPerspectiveProjection.cpp; path = vbCamera/vbPerspectiveProjection.cpp; sourceTree = "<group>"; };
+		D85FC4E416C1073E004D5CC3 /* vbICameraProjection.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = vbICameraProjection.hpp; path = vbCamera/vbICameraProjection.hpp; sourceTree = "<group>"; };
+		D85FC4E516C10754004D5CC3 /* vbICameraProjection.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = vbICameraProjection.cpp; path = vbCamera/vbICameraProjection.cpp; sourceTree = "<group>"; };
+		D87555AC16CE319700155E6D /* vbEdges.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = vbEdges.cpp; path = vbEdges/vbEdges.cpp; sourceTree = "<group>"; };
+		D87555AD16CE319700155E6D /* vbEdges.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = vbEdges.hpp; path = vbEdges/vbEdges.hpp; sourceTree = "<group>"; };
+		D887D9F016C33FB00032E3BF /* vbMoveOrbitZoomCameraControl.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = vbMoveOrbitZoomCameraControl.hpp; path = vbCamera/vbMoveOrbitZoomCameraControl.hpp; sourceTree = "<group>"; };
+		D887D9F216C33FCD0032E3BF /* vbMoveOrbitZoomCameraControl.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = vbMoveOrbitZoomCameraControl.cpp; path = vbCamera/vbMoveOrbitZoomCameraControl.cpp; sourceTree = "<group>"; };
+		D887D9F516C3449D0032E3BF /* vbRotateCameraControl.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = vbRotateCameraControl.hpp; path = vbCamera/vbRotateCameraControl.hpp; sourceTree = "<group>"; };
+		D887D9F616C344D20032E3BF /* vbRotateCameraControl.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = vbRotateCameraControl.cpp; path = vbCamera/vbRotateCameraControl.cpp; sourceTree = "<group>"; };
+		D887D9F916C345AD0032E3BF /* vbMoveCameraControl.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = vbMoveCameraControl.cpp; path = vbCamera/vbMoveCameraControl.cpp; sourceTree = "<group>"; };
+		D887D9FA16C345AD0032E3BF /* vbMoveCameraControl.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = vbMoveCameraControl.hpp; path = vbCamera/vbMoveCameraControl.hpp; sourceTree = "<group>"; };
+		D887D9FF16C3671E0032E3BF /* vbHorizontalPanCameraControl.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = vbHorizontalPanCameraControl.cpp; path = vbCamera/vbHorizontalPanCameraControl.cpp; sourceTree = "<group>"; };
+		D887DA0016C3671E0032E3BF /* vbHorizontalPanCameraControl.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = vbHorizontalPanCameraControl.hpp; path = vbCamera/vbHorizontalPanCameraControl.hpp; sourceTree = "<group>"; };
+		D887DA0216C371BA0032E3BF /* vbFreeCameraControl.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = vbFreeCameraControl.cpp; path = vbCamera/vbFreeCameraControl.cpp; sourceTree = "<group>"; };
+		D887DA0316C371BA0032E3BF /* vbFreeCameraControl.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = vbFreeCameraControl.hpp; path = vbCamera/vbFreeCameraControl.hpp; sourceTree = "<group>"; };
+		D8AB0FEC16C1E88800DD659C /* vbCameraControl.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = vbCameraControl.hpp; path = vbCamera/vbCameraControl.hpp; sourceTree = "<group>"; };
+		D8AB0FEE16C1E8A200DD659C /* vbCameraControl.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = vbCameraControl.cpp; path = vbCamera/vbCameraControl.cpp; sourceTree = "<group>"; };
+		D8AB0FF116C1E9DB00DD659C /* vbTrackCameraControl.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = vbTrackCameraControl.hpp; path = vbCamera/vbTrackCameraControl.hpp; sourceTree = "<group>"; };
+		D8AB0FF216C1EA6800DD659C /* vbTrackCameraControl.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = vbTrackCameraControl.cpp; path = vbCamera/vbTrackCameraControl.cpp; sourceTree = "<group>"; };
+		D8AB0FF616C24B0100DD659C /* vbFPSCameraControl.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = vbFPSCameraControl.hpp; path = vbCamera/vbFPSCameraControl.hpp; sourceTree = "<group>"; };
+		D8AB0FF716C24B1800DD659C /* vbFPSCameraControl.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = vbFPSCameraControl.cpp; path = vbCamera/vbFPSCameraControl.cpp; sourceTree = "<group>"; };
+		DB05566A15E5BD0E00FF83E2 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		DB05566B15E5BD0E00FF83E2 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		DB05566C15E5BD0E00FF83E2 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		DB05566D15E5BD0E00FF83E2 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		DB05566E15E5BD0E00FF83E2 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		DBA1DFEA15C5C625004AB5D8 /* TexturedLighting.frag */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = TexturedLighting.frag; sourceTree = "<group>"; };
+		DBA1DFEB15C5C625004AB5D8 /* TexturedLighting.vert */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = TexturedLighting.vert; sourceTree = "<group>"; };
+		DBCC8E55164027D4005B5108 /* ApplicationEngine.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ApplicationEngine.cpp; sourceTree = "<group>"; };
+		DBCC8E5B164027D4005B5108 /* Interfaces.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Interfaces.hpp; sourceTree = "<group>"; };
+		DBCC8E5D164027D4005B5108 /* Matrix.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Matrix.hpp; sourceTree = "<group>"; };
+		DBCC8E5E164027D4005B5108 /* Quaternion.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Quaternion.hpp; sourceTree = "<group>"; };
+		DBCC8E5F164027D4005B5108 /* Vector.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Vector.hpp; sourceTree = "<group>"; };
+		DBCC8E61164027D4005B5108 /* vbMe.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = vbMe.cpp; sourceTree = "<group>"; };
+		DBCC8E62164027D4005B5108 /* vbMe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = vbMe.h; sourceTree = "<group>"; };
+		DBCC8E69164027D4005B5108 /* vbPOI.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = vbPOI.cpp; sourceTree = "<group>"; };
+		DBCC8E6A164027D4005B5108 /* vbPOI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = vbPOI.h; sourceTree = "<group>"; };
+		DBCC8E6B164027D4005B5108 /* vbPOIFactory.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = vbPOIFactory.cpp; sourceTree = "<group>"; };
+		DBCC8E6C164027D4005B5108 /* vbPOIFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = vbPOIFactory.h; sourceTree = "<group>"; };
+		DBCC8E6D164027D4005B5108 /* vbPOIManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = vbPOIManager.cpp; sourceTree = "<group>"; };
+		DBCC8E6E164027D4005B5108 /* vbPOIManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = vbPOIManager.h; sourceTree = "<group>"; };
+		DBCC8E6F164027D4005B5108 /* vbSpace.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = vbSpace.cpp; sourceTree = "<group>"; };
+		DBCC8E70164027D4005B5108 /* vbSpace.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = vbSpace.h; sourceTree = "<group>"; };
+		DBCC8E72164027D4005B5108 /* RenderingBase.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = RenderingBase.cpp; sourceTree = "<group>"; };
+		DBCC8E73164027D4005B5108 /* RenderingBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RenderingBase.h; sourceTree = "<group>"; };
+		DBCC8E74164027D4005B5108 /* RenderingEngine.ES1.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = RenderingEngine.ES1.cpp; sourceTree = "<group>"; };
+		DBCC8E75164027D4005B5108 /* RenderingEngine.ES2.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = RenderingEngine.ES2.cpp; sourceTree = "<group>"; };
+		DBCC8E76164027D4005B5108 /* ResourceManager.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ResourceManager.mm; sourceTree = "<group>"; };
+		DBCC8E77164027D4005B5108 /* VbNavKit-iOS-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "VbNavKit-iOS-Prefix.pch"; sourceTree = "<group>"; };
+		DBCC8E7B164027D4005B5108 /* vbConfiguration.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = vbConfiguration.cpp; sourceTree = "<group>"; };
+		DBCC8E7C164027D4005B5108 /* vbConfiguration.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = vbConfiguration.hpp; sourceTree = "<group>"; };
+		DBCC8E7E164027D4005B5108 /* vbGeometry.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = vbGeometry.cpp; sourceTree = "<group>"; };
+		DBCC8E7F164027D4005B5108 /* vbGeometry.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = vbGeometry.hpp; sourceTree = "<group>"; };
+		DBCC8E81164027D4005B5108 /* vbMaterial.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = vbMaterial.cpp; sourceTree = "<group>"; };
+		DBCC8E82164027D4005B5108 /* vbMaterial.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = vbMaterial.hpp; sourceTree = "<group>"; };
+		DBCC8E83164027D4005B5108 /* vbMaterialFactory.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = vbMaterialFactory.cpp; sourceTree = "<group>"; };
+		DBCC8E84164027D4005B5108 /* vbMaterialFactory.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = vbMaterialFactory.hpp; sourceTree = "<group>"; };
+		DBCC8E85164027D4005B5108 /* vbMaterialManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = vbMaterialManager.cpp; sourceTree = "<group>"; };
+		DBCC8E86164027D4005B5108 /* vbMaterialManager.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = vbMaterialManager.hpp; sourceTree = "<group>"; };
+		DBCC8E88164027D4005B5108 /* vbMesh.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = vbMesh.cpp; sourceTree = "<group>"; };
+		DBCC8E89164027D4005B5108 /* vbMesh.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = vbMesh.hpp; sourceTree = "<group>"; };
+		DBCC8E8A164027D4005B5108 /* vbMeshFactory.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = vbMeshFactory.cpp; sourceTree = "<group>"; };
+		DBCC8E8B164027D4005B5108 /* vbMeshFactory.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = vbMeshFactory.hpp; sourceTree = "<group>"; };
+		DBCC8E8C164027D4005B5108 /* vbMeshManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = vbMeshManager.cpp; sourceTree = "<group>"; };
+		DBCC8E8D164027D4005B5108 /* vbMeshManager.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = vbMeshManager.hpp; sourceTree = "<group>"; };
+		DBCC8E8F164027D4005B5108 /* vbPath.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = vbPath.cpp; sourceTree = "<group>"; };
+		DBCC8E90164027D4005B5108 /* vbPath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = vbPath.h; sourceTree = "<group>"; };
+		DBCC8E91164027D4005B5108 /* vbPathManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = vbPathManager.cpp; sourceTree = "<group>"; };
+		DBCC8E92164027D4005B5108 /* vbPathManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = vbPathManager.h; sourceTree = "<group>"; };
+		DBCC8E94164027D4005B5108 /* vbViewInfo.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = vbViewInfo.cpp; sourceTree = "<group>"; };
+		DBCC8E95164027D4005B5108 /* vbViewInfo.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = vbViewInfo.hpp; sourceTree = "<group>"; };
+		DBCC8E96164027D4005B5108 /* vbViewInfoAnimation.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = vbViewInfoAnimation.cpp; sourceTree = "<group>"; };
+		DBCC8E97164027D4005B5108 /* vbViewInfoCalc.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = vbViewInfoCalc.cpp; sourceTree = "<group>"; };
+		DBCC8E98164027D4005B5108 /* vbViewInfoCamera.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = vbViewInfoCamera.cpp; sourceTree = "<group>"; };
+		DBCC8E99164027D4005B5108 /* vbViewInfoFinger.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = vbViewInfoFinger.cpp; sourceTree = "<group>"; };
+		DBCC8E9A164027D4005B5108 /* vbViewInfoNavi.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = vbViewInfoNavi.cpp; sourceTree = "<group>"; };
+		DBCC8E9B164027D4005B5108 /* vbViewInfoProjection.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = vbViewInfoProjection.cpp; sourceTree = "<group>"; };
+		DBCC8E9D164027D4005B5108 /* GLView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLView.h; sourceTree = "<group>"; };
+		DBCC8E9E164027D4005B5108 /* GLView.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = GLView.mm; sourceTree = "<group>"; };
+		DBED90F115DCA25700327DCC /* libVbNavKit-iOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libVbNavKit-iOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DBED90EE15DCA25700327DCC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DB05567415E5BD2900FF83E2 /* CoreGraphics.framework in Frameworks */,
+				DB05567515E5BD2900FF83E2 /* Foundation.framework in Frameworks */,
+				DB05567615E5BD2900FF83E2 /* OpenGLES.framework in Frameworks */,
+				DB05567715E5BD2900FF83E2 /* QuartzCore.framework in Frameworks */,
+				DB05567815E5BD2900FF83E2 /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		104503A819823BA200E85D12 /* Instance */ = {
+			isa = PBXGroup;
+			children = (
+				101A05F019873A3B002BC476 /* vbInstanceManager.cpp */,
+				101A05F119873A3B002BC476 /* vbInstanceManager.h */,
+				101A05F219873A3B002BC476 /* vbMeshInstance.cpp */,
+				101A05F319873A3B002BC476 /* vbMeshInstance.h */,
+				109678DE19878D5B001A47CB /* vbInstanceFactory.cpp */,
+				109678DF19878D5B001A47CB /* vbInstanceFactory.h */,
+			);
+			name = Instance;
+			sourceTree = "<group>";
+		};
+		10F87DDA1988D32D00213FA4 /* tess */ = {
+			isa = PBXGroup;
+			children = (
+				10F87DDB1988D32D00213FA4 /* common */,
+				10F87DDF1988D32D00213FA4 /* sweep */,
+				10F87DE81988D32D00213FA4 /* tess.h */,
+				10F87DEE1988DFB600213FA4 /* vbPolygon.cpp */,
+				10F87DEF1988DFB600213FA4 /* vbPolygon.h */,
+				1003F3E0198A0C0800AD05FF /* vbPolyManager.cpp */,
+				1003F3E1198A0C0800AD05FF /* vbPolyManager.h */,
+			);
+			path = tess;
+			sourceTree = "<group>";
+		};
+		10F87DDB1988D32D00213FA4 /* common */ = {
+			isa = PBXGroup;
+			children = (
+				10F87DDC1988D32D00213FA4 /* geometry.cc */,
+				10F87DDD1988D32D00213FA4 /* geometry.h */,
+				10F87DDE1988D32D00213FA4 /* utils.h */,
+			);
+			path = common;
+			sourceTree = "<group>";
+		};
+		10F87DDF1988D32D00213FA4 /* sweep */ = {
+			isa = PBXGroup;
+			children = (
+				10F87DE01988D32D00213FA4 /* geo_cdt.cc */,
+				10F87DE11988D32D00213FA4 /* geo_cdt.h */,
+				10F87DE21988D32D00213FA4 /* geo_advancing.cc */,
+				10F87DE31988D32D00213FA4 /* geo_advancing.h */,
+				10F87DE41988D32D00213FA4 /* geo_sweep.cc */,
+				10F87DE51988D32D00213FA4 /* geo_sweep.h */,
+				10F87DE61988D32D00213FA4 /* geo_sweeper.cc */,
+				10F87DE71988D32D00213FA4 /* geo_sweeper.h */,
+			);
+			path = sweep;
+			sourceTree = "<group>";
+		};
+		57876049186973B7008FE7DF /* Picking */ = {
+			isa = PBXGroup;
+			children = (
+				5787604A18697419008FE7DF /* vbColorCoder.cpp */,
+				5787604B18697419008FE7DF /* vbColorCoder.hpp */,
+			);
+			name = Picking;
+			sourceTree = "<group>";
+		};
+		C1C1B3CD1A92BE6600A6CFCE /* vbMeshGroup */ = {
+			isa = PBXGroup;
+			children = (
+				C1C1B3CE1A92BEA000A6CFCE /* vbMeshGroup.cpp */,
+				C1C1B3CF1A92BEA000A6CFCE /* vbMeshGroup.h */,
+				C1C1B3D11A92C0BF00A6CFCE /* vbMeshGroupManager.cpp */,
+				C1C1B3D21A92C0BF00A6CFCE /* vbMeshGroupManager.h */,
+			);
+			name = vbMeshGroup;
+			sourceTree = "<group>";
+		};
+		D80CE4BD16DB5C40005BC3D3 /* ControlSet */ = {
+			isa = PBXGroup;
+			children = (
+				D85619D2172766B000F50DA6 /* vbViewInfoFinger_GongVueA.cpp */,
+				D80CE4BF16DB5C9F005BC3D3 /* vbViewInfoFinger_PISA.cpp */,
+				D80CE4C216DB5CF2005BC3D3 /* vbViewInfoFinger_YawPitch.cpp */,
+				D80CE4C516DB5D16005BC3D3 /* vbViewInfoFinger_STD1.cpp */,
+				579F5F981856F111001C81C0 /* vbViewInfoFinger_ZoneView.cpp */,
+				57650FA518978D4400647760 /* vbViewInfoFinger_PalladiON.cpp */,
+				1E15DB1518B1E98400CC208C /* vbViewInfoFinger_Planar3D.cpp */,
+			);
+			name = ControlSet;
+			sourceTree = "<group>";
+		};
+		D83338BD16C9C9CC0052C551 /* AnimationControl */ = {
+			isa = PBXGroup;
+			children = (
+				D83338BF16C9CA200052C551 /* vbAnimationCameraControl.cpp */,
+				D83338C016C9CA200052C551 /* vbAnimationCameraControl.hpp */,
+			);
+			name = AnimationControl;
+			sourceTree = "<group>";
+		};
+		D85FC4DD16C0F706004D5CC3 /* vbCamera */ = {
+			isa = PBXGroup;
+			children = (
+				D8AB0FF516C1EACB00DD659C /* Projection */,
+				D8AB0FF016C1E99F00DD659C /* CameraControl */,
+				D85FC4DB16C0F6E7004D5CC3 /* vbCamera.hpp */,
+				D85FC4DE16C0F730004D5CC3 /* vbCamera.cpp */,
+			);
+			name = vbCamera;
+			sourceTree = "<group>";
+		};
+		D87555AA16CE318700155E6D /* vbEdges */ = {
+			isa = PBXGroup;
+			children = (
+				D87555AC16CE319700155E6D /* vbEdges.cpp */,
+				D87555AD16CE319700155E6D /* vbEdges.hpp */,
+			);
+			name = vbEdges;
+			sourceTree = "<group>";
+		};
+		D887D9FC16C346320032E3BF /* RotationControl */ = {
+			isa = PBXGroup;
+			children = (
+				D887D9F516C3449D0032E3BF /* vbRotateCameraControl.hpp */,
+				D887D9F616C344D20032E3BF /* vbRotateCameraControl.cpp */,
+				D8AB0FF116C1E9DB00DD659C /* vbTrackCameraControl.hpp */,
+				D8AB0FF216C1EA6800DD659C /* vbTrackCameraControl.cpp */,
+				D887DA0216C371BA0032E3BF /* vbFreeCameraControl.cpp */,
+				D887DA0316C371BA0032E3BF /* vbFreeCameraControl.hpp */,
+			);
+			name = RotationControl;
+			sourceTree = "<group>";
+		};
+		D887D9FD16C346420032E3BF /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				D8AB0FEC16C1E88800DD659C /* vbCameraControl.hpp */,
+				D8AB0FEE16C1E8A200DD659C /* vbCameraControl.cpp */,
+			);
+			name = Base;
+			sourceTree = "<group>";
+		};
+		D887D9FE16C346620032E3BF /* MoveControl */ = {
+			isa = PBXGroup;
+			children = (
+				D859D0D6172A3C200067AF99 /* vbMovingForwardCameraControl.cpp */,
+				D859D0D7172A3C210067AF99 /* vbMovingForwardCameraControl.hpp */,
+				D887D9F916C345AD0032E3BF /* vbMoveCameraControl.cpp */,
+				D887D9FA16C345AD0032E3BF /* vbMoveCameraControl.hpp */,
+				D887D9F016C33FB00032E3BF /* vbMoveOrbitZoomCameraControl.hpp */,
+				D887D9F216C33FCD0032E3BF /* vbMoveOrbitZoomCameraControl.cpp */,
+				D887D9FF16C3671E0032E3BF /* vbHorizontalPanCameraControl.cpp */,
+				D887DA0016C3671E0032E3BF /* vbHorizontalPanCameraControl.hpp */,
+				10E566711990A8F000070654 /* vbFlyingCameraControl.cpp */,
+				10E566721990A8F000070654 /* vbFlyingCameraControl.h */,
+			);
+			name = MoveControl;
+			sourceTree = "<group>";
+		};
+		D8AB0FF016C1E99F00DD659C /* CameraControl */ = {
+			isa = PBXGroup;
+			children = (
+				D83338BD16C9C9CC0052C551 /* AnimationControl */,
+				D887D9FD16C346420032E3BF /* Base */,
+				D887D9FC16C346320032E3BF /* RotationControl */,
+				D887D9FE16C346620032E3BF /* MoveControl */,
+				D8AB0FF616C24B0100DD659C /* vbFPSCameraControl.hpp */,
+				D8AB0FF716C24B1800DD659C /* vbFPSCameraControl.cpp */,
+			);
+			name = CameraControl;
+			sourceTree = "<group>";
+		};
+		D8AB0FF516C1EACB00DD659C /* Projection */ = {
+			isa = PBXGroup;
+			children = (
+				D85FC4E416C1073E004D5CC3 /* vbICameraProjection.hpp */,
+				D85FC4E516C10754004D5CC3 /* vbICameraProjection.cpp */,
+				D85FC4E016C0FBC0004D5CC3 /* vbPerspectiveProjection.hpp */,
+				D85FC4E116C0FBE3004D5CC3 /* vbPerspectiveProjection.cpp */,
+				D843074816CB191A00CEB3B1 /* vbOrthogonalProjection.hpp */,
+				D843074716CB191A00CEB3B1 /* vbOrthogonalProjection.cpp */,
+			);
+			name = Projection;
+			sourceTree = "<group>";
+		};
+		DBA1DE3B15C5B08D004AB5D8 = {
+			isa = PBXGroup;
+			children = (
+				DBCC8E54164027D4005B5108 /* Classes */,
+				DBA1DFE915C5C625004AB5D8 /* Shaders */,
+				DBA1DE4815C5B08D004AB5D8 /* Frameworks */,
+				DBA1DE4715C5B08D004AB5D8 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DBA1DE4715C5B08D004AB5D8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DBED90F115DCA25700327DCC /* libVbNavKit-iOS.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DBA1DE4815C5B08D004AB5D8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DB05566A15E5BD0E00FF83E2 /* CoreGraphics.framework */,
+				DB05566B15E5BD0E00FF83E2 /* Foundation.framework */,
+				DB05566C15E5BD0E00FF83E2 /* OpenGLES.framework */,
+				DB05566D15E5BD0E00FF83E2 /* QuartzCore.framework */,
+				DB05566E15E5BD0E00FF83E2 /* UIKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DBA1DFE915C5C625004AB5D8 /* Shaders */ = {
+			isa = PBXGroup;
+			children = (
+				DBA1DFEA15C5C625004AB5D8 /* TexturedLighting.frag */,
+				DBA1DFEB15C5C625004AB5D8 /* TexturedLighting.vert */,
+			);
+			path = Shaders;
+			sourceTree = "<group>";
+		};
+		DBCC8E54164027D4005B5108 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				C1C1B3CD1A92BE6600A6CFCE /* vbMeshGroup */,
+				10F87DDA1988D32D00213FA4 /* tess */,
+				104503A819823BA200E85D12 /* Instance */,
+				DBCC8E55164027D4005B5108 /* ApplicationEngine.cpp */,
+				DBCC8E5B164027D4005B5108 /* Interfaces.hpp */,
+				DBCC8E76164027D4005B5108 /* ResourceManager.mm */,
+				DBCC8E77164027D4005B5108 /* VbNavKit-iOS-Prefix.pch */,
+				DBCC8E56164027D4005B5108 /* Common */,
+				DBCC8E5C164027D4005B5108 /* Math */,
+				DBCC8E60164027D4005B5108 /* Me */,
+				DBCC8E63164027D4005B5108 /* Parser */,
+				DBCC8E64164027D4005B5108 /* POI */,
+				DBCC8E71164027D4005B5108 /* Renderer */,
+				DBCC8E7A164027D4005B5108 /* VbConfig */,
+				DBCC8E7D164027D4005B5108 /* VbGeoMath */,
+				DBCC8E80164027D4005B5108 /* VbMaterial */,
+				D87555AA16CE318700155E6D /* vbEdges */,
+				DBCC8E87164027D4005B5108 /* VbMeshes */,
+				DBCC8E8E164027D4005B5108 /* VbPath */,
+				DBCC8E93164027D4005B5108 /* VbViewInfo */,
+				D85FC4DD16C0F706004D5CC3 /* vbCamera */,
+				57876049186973B7008FE7DF /* Picking */,
+				DBCC8E9C164027D4005B5108 /* View */,
+				1035E2B11985F062005D45A7 /* vbEnum.hpp */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		DBCC8E56164027D4005B5108 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		DBCC8E5C164027D4005B5108 /* Math */ = {
+			isa = PBXGroup;
+			children = (
+				DBCC8E5D164027D4005B5108 /* Matrix.hpp */,
+				DBCC8E5E164027D4005B5108 /* Quaternion.hpp */,
+				DBCC8E5F164027D4005B5108 /* Vector.hpp */,
+			);
+			path = Math;
+			sourceTree = "<group>";
+		};
+		DBCC8E60164027D4005B5108 /* Me */ = {
+			isa = PBXGroup;
+			children = (
+				DBCC8E61164027D4005B5108 /* vbMe.cpp */,
+				DBCC8E62164027D4005B5108 /* vbMe.h */,
+			);
+			path = Me;
+			sourceTree = "<group>";
+		};
+		DBCC8E63164027D4005B5108 /* Parser */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Parser;
+			sourceTree = "<group>";
+		};
+		DBCC8E64164027D4005B5108 /* POI */ = {
+			isa = PBXGroup;
+			children = (
+				DBCC8E69164027D4005B5108 /* vbPOI.cpp */,
+				DBCC8E6A164027D4005B5108 /* vbPOI.h */,
+				DBCC8E6B164027D4005B5108 /* vbPOIFactory.cpp */,
+				DBCC8E6C164027D4005B5108 /* vbPOIFactory.h */,
+				DBCC8E6D164027D4005B5108 /* vbPOIManager.cpp */,
+				DBCC8E6E164027D4005B5108 /* vbPOIManager.h */,
+				DBCC8E6F164027D4005B5108 /* vbSpace.cpp */,
+				DBCC8E70164027D4005B5108 /* vbSpace.h */,
+			);
+			path = POI;
+			sourceTree = "<group>";
+		};
+		DBCC8E71164027D4005B5108 /* Renderer */ = {
+			isa = PBXGroup;
+			children = (
+				DBCC8E72164027D4005B5108 /* RenderingBase.cpp */,
+				DBCC8E73164027D4005B5108 /* RenderingBase.h */,
+				DBCC8E74164027D4005B5108 /* RenderingEngine.ES1.cpp */,
+				DBCC8E75164027D4005B5108 /* RenderingEngine.ES2.cpp */,
+			);
+			path = Renderer;
+			sourceTree = "<group>";
+		};
+		DBCC8E7A164027D4005B5108 /* VbConfig */ = {
+			isa = PBXGroup;
+			children = (
+				DBCC8E7B164027D4005B5108 /* vbConfiguration.cpp */,
+				DBCC8E7C164027D4005B5108 /* vbConfiguration.hpp */,
+			);
+			path = VbConfig;
+			sourceTree = "<group>";
+		};
+		DBCC8E7D164027D4005B5108 /* VbGeoMath */ = {
+			isa = PBXGroup;
+			children = (
+				DBCC8E7E164027D4005B5108 /* vbGeometry.cpp */,
+				DBCC8E7F164027D4005B5108 /* vbGeometry.hpp */,
+			);
+			path = VbGeoMath;
+			sourceTree = "<group>";
+		};
+		DBCC8E80164027D4005B5108 /* VbMaterial */ = {
+			isa = PBXGroup;
+			children = (
+				DBCC8E81164027D4005B5108 /* vbMaterial.cpp */,
+				DBCC8E82164027D4005B5108 /* vbMaterial.hpp */,
+				DBCC8E83164027D4005B5108 /* vbMaterialFactory.cpp */,
+				DBCC8E84164027D4005B5108 /* vbMaterialFactory.hpp */,
+				DBCC8E85164027D4005B5108 /* vbMaterialManager.cpp */,
+				DBCC8E86164027D4005B5108 /* vbMaterialManager.hpp */,
+			);
+			path = VbMaterial;
+			sourceTree = "<group>";
+		};
+		DBCC8E87164027D4005B5108 /* VbMeshes */ = {
+			isa = PBXGroup;
+			children = (
+				DBCC8E88164027D4005B5108 /* vbMesh.cpp */,
+				DBCC8E89164027D4005B5108 /* vbMesh.hpp */,
+				DBCC8E8A164027D4005B5108 /* vbMeshFactory.cpp */,
+				DBCC8E8B164027D4005B5108 /* vbMeshFactory.hpp */,
+				DBCC8E8C164027D4005B5108 /* vbMeshManager.cpp */,
+				DBCC8E8D164027D4005B5108 /* vbMeshManager.hpp */,
+			);
+			path = VbMeshes;
+			sourceTree = "<group>";
+		};
+		DBCC8E8E164027D4005B5108 /* VbPath */ = {
+			isa = PBXGroup;
+			children = (
+				DBCC8E8F164027D4005B5108 /* vbPath.cpp */,
+				DBCC8E90164027D4005B5108 /* vbPath.h */,
+				DBCC8E91164027D4005B5108 /* vbPathManager.cpp */,
+				DBCC8E92164027D4005B5108 /* vbPathManager.h */,
+			);
+			path = VbPath;
+			sourceTree = "<group>";
+		};
+		DBCC8E93164027D4005B5108 /* VbViewInfo */ = {
+			isa = PBXGroup;
+			children = (
+				D80CE4BD16DB5C40005BC3D3 /* ControlSet */,
+				DBCC8E94164027D4005B5108 /* vbViewInfo.cpp */,
+				DBCC8E95164027D4005B5108 /* vbViewInfo.hpp */,
+				DBCC8E96164027D4005B5108 /* vbViewInfoAnimation.cpp */,
+				DBCC8E97164027D4005B5108 /* vbViewInfoCalc.cpp */,
+				DBCC8E98164027D4005B5108 /* vbViewInfoCamera.cpp */,
+				DBCC8E99164027D4005B5108 /* vbViewInfoFinger.cpp */,
+				DBCC8E9A164027D4005B5108 /* vbViewInfoNavi.cpp */,
+				DBCC8E9B164027D4005B5108 /* vbViewInfoProjection.cpp */,
+			);
+			path = VbViewInfo;
+			sourceTree = "<group>";
+		};
+		DBCC8E9C164027D4005B5108 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				64D37230165232DE0024BABD /* GLViewDelegate2.h */,
+				DBCC8E9D164027D4005B5108 /* GLView.h */,
+				DBCC8E9E164027D4005B5108 /* GLView.mm */,
+				6491456016533E9900A497B3 /* Projection.h */,
+				6491456116533E9900A497B3 /* Projection.mm */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DBED90F015DCA25700327DCC /* VbNavKit-iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DBED90FA15DCA25700327DCC /* Build configuration list for PBXNativeTarget "VbNavKit-iOS" */;
+			buildPhases = (
+				DBED90ED15DCA25700327DCC /* Sources */,
+				DBED90EE15DCA25700327DCC /* Frameworks */,
+				DBED90EF15DCA25700327DCC /* CopyFiles */,
+				57E316E119331CD30049A60A /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "VbNavKit-iOS";
+			productName = VBBIMRenderKitSimulator;
+			productReference = DBED90F115DCA25700327DCC /* libVbNavKit-iOS.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DBA1DE3D15C5B08D004AB5D8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = dev4;
+			};
+			buildConfigurationList = DBA1DE4015C5B08D004AB5D8 /* Build configuration list for PBXProject "VbNavKit-iOS" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = DBA1DE3B15C5B08D004AB5D8;
+			productRefGroup = DBA1DE4715C5B08D004AB5D8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DBED90F015DCA25700327DCC /* VbNavKit-iOS */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		57E316E119331CD30049A60A /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "##########################################\n#\n# c.f. http://stackoverflow.com/questions/3520977/build-fat-static-library-device-simulator-using-xcode-and-sdk-4\n#\n# Version 2.7\n#\n# Latest Change:\n# - Supports iPhone 5 / iPod Touch 5 (uses Apple's workaround to lipo bug)\n#\n# Purpose:\n#   Automatically create a Universal static library for iPhone + iPad + iPhone Simulator from within XCode\n#\n# Author: Adam Martin - http://twitter.com/redglassesapps\n# Based on: original script from Eonil (main changes: Eonil's script WILL NOT WORK in Xcode GUI - it WILL CRASH YOUR COMPUTER)\n#\n\nset -e\nset -o pipefail\n\n#################[ Tests: helps workaround any future bugs in Xcode ]########\n#\nDEBUG_THIS_SCRIPT=\"true\"\n\nif [ $DEBUG_THIS_SCRIPT = \"true\" ]\nthen\necho \"########### TESTS #############\"\necho \"Use the following variables when debugging this script; note that they may change on recursions\"\necho \"BUILD_DIR = $BUILD_DIR\"\necho \"BUILD_ROOT = $BUILD_ROOT\"\necho \"CONFIGURATION_BUILD_DIR = $CONFIGURATION_BUILD_DIR\"\necho \"BUILT_PRODUCTS_DIR = $BUILT_PRODUCTS_DIR\"\necho \"CONFIGURATION_TEMP_DIR = $CONFIGURATION_TEMP_DIR\"\necho \"TARGET_BUILD_DIR = $TARGET_BUILD_DIR\"\nfi\n\n#####################[ part 1 ]##################\n# First, work out the BASESDK version number (NB: Apple ought to report this, but they hide it)\n#    (incidental: searching for substrings in sh is a nightmare! Sob)\n\nSDK_VERSION=$(echo ${SDK_NAME} | grep -o '.\\{4\\}$')\n\n# Next, work out if we're in SIM or DEVICE\n\nif [ ${PLATFORM_NAME} = \"iphonesimulator\" ]\nthen\nOTHER_SDK_TO_BUILD=iphoneos${SDK_VERSION}\nelse\nOTHER_SDK_TO_BUILD=iphonesimulator${SDK_VERSION}\nfi\n\necho \"XCode has selected SDK: ${PLATFORM_NAME} with version: ${SDK_VERSION} (although back-targetting: ${IPHONEOS_DEPLOYMENT_TARGET})\"\necho \"...therefore, OTHER_SDK_TO_BUILD = ${OTHER_SDK_TO_BUILD}\"\n#\n#####################[ end of part 1 ]##################\n\n#####################[ part 2 ]##################\n#\n# IF this is the original invocation, invoke WHATEVER other builds are required\n#\n# Xcode is already building ONE target...\n#\n# ...but this is a LIBRARY, so Apple is wrong to set it to build just one.\n# ...we need to build ALL targets\n# ...we MUST NOT re-build the target that is ALREADY being built: Xcode WILL CRASH YOUR COMPUTER if you try this (infinite recursion!)\n#\n#\n# So: build ONLY the missing platforms/configurations.\n\nif [ \"true\" == ${ALREADYINVOKED:-false} ]\nthen\necho \"RECURSION: I am NOT the root invocation, so I'm NOT going to recurse\"\nelse\n# CRITICAL:\n# Prevent infinite recursion (Xcode sucks)\nexport ALREADYINVOKED=\"true\"\n\necho \"RECURSION: I am the root ... recursing all missing build targets NOW...\"\necho \"RECURSION: ...about to invoke: xcodebuild -configuration \\\"${CONFIGURATION}\\\" -project \\\"${PROJECT_NAME}.xcodeproj\\\" -target \\\"${TARGET_NAME}\\\" -sdk \\\"${OTHER_SDK_TO_BUILD}\\\" ${ACTION} RUN_CLANG_STATIC_ANALYZER=NO\" BUILD_DIR=\\\"${BUILD_DIR}\\\" BUILD_ROOT=\\\"${BUILD_ROOT}\\\" SYMROOT=\\\"${SYMROOT}\\\"\n\nxcodebuild -configuration \"${CONFIGURATION}\" -project \"${PROJECT_NAME}.xcodeproj\" -target \"${TARGET_NAME}\" -sdk \"${OTHER_SDK_TO_BUILD}\" ${ACTION} RUN_CLANG_STATIC_ANALYZER=NO BUILD_DIR=\"${BUILD_DIR}\" BUILD_ROOT=\"${BUILD_ROOT}\" SYMROOT=\"${SYMROOT}\"\n\nACTION=\"build\"\n\n#Merge all platform binaries as a fat binary for each configurations.\n\n# Calculate where the (multiple) built files are coming from:\nCURRENTCONFIG_DEVICE_DIR=${SYMROOT}/${CONFIGURATION}-iphoneos\nCURRENTCONFIG_SIMULATOR_DIR=${SYMROOT}/${CONFIGURATION}-iphonesimulator\n\necho \"Taking device build from: ${CURRENTCONFIG_DEVICE_DIR}\"\necho \"Taking simulator build from: ${CURRENTCONFIG_SIMULATOR_DIR}\"\n\nCREATING_UNIVERSAL_DIR=${SYMROOT}/${CONFIGURATION}-universal\n#CREATING_UNIVERSAL_DIR=\"/Applications/vbLib/${PROJECT_NAME}/\"\n\necho \"...I will output a universal build to: ${CREATING_UNIVERSAL_DIR}\"\n\n# ... remove the products of previous runs of this script\n#      NB: this directory is ONLY created by this script - it should be safe to delete!\n\nrm -rf \"${CREATING_UNIVERSAL_DIR}\"\nmkdir \"${CREATING_UNIVERSAL_DIR}\"\n\n#\necho \"lipo: for current configuration (${CONFIGURATION}) creating output file: ${CREATING_UNIVERSAL_DIR}/${EXECUTABLE_NAME}\"\nxcrun -sdk iphoneos lipo -create -output \"${CREATING_UNIVERSAL_DIR}/${EXECUTABLE_NAME}\" \"${CURRENTCONFIG_DEVICE_DIR}/${EXECUTABLE_NAME}\" \"${CURRENTCONFIG_SIMULATOR_DIR}/${EXECUTABLE_NAME}\"\n\n#########\n#\n# Added: StackOverflow suggestion to also copy \"include\" files\n#    (untested, but should work OK)\n#\necho \"Fetching headers from ${PUBLIC_HEADERS_FOLDER_PATH}\"\necho \"  (if you embed your library project in another project, you will need to add\"\necho \"   a \"User Search Headers\" build setting of: (NB INCLUDE THE DOUBLE QUOTES BELOW!)\"\necho '        \"$(TARGET_BUILD_DIR)/usr/local/include/\"'\nif [ -d \"${CURRENTCONFIG_DEVICE_DIR}${PUBLIC_HEADERS_FOLDER_PATH}\" ]\nthen\nmkdir -p \"${CREATING_UNIVERSAL_DIR}${PUBLIC_HEADERS_FOLDER_PATH}\"\n# * needs to be outside the double quotes?\ncp -r \"${CURRENTCONFIG_DEVICE_DIR}${PUBLIC_HEADERS_FOLDER_PATH}\"* \"${CREATING_UNIVERSAL_DIR}${PUBLIC_HEADERS_FOLDER_PATH}\"\nfi\nfi";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DBED90ED15DCA25700327DCC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D8BBD1C31647A1FA00F30A21 /* ApplicationEngine.cpp in Sources */,
+				D8BBD1C41647A1FA00F30A21 /* ResourceManager.mm in Sources */,
+				D8BBD1C71647A1FA00F30A21 /* vbMe.cpp in Sources */,
+				10F87DEA1988D32D00213FA4 /* geo_cdt.cc in Sources */,
+				D8BBD1CA1647A1FA00F30A21 /* vbPOI.cpp in Sources */,
+				D8BBD1CB1647A1FA00F30A21 /* vbPOIFactory.cpp in Sources */,
+				D8BBD1CC1647A1FA00F30A21 /* vbPOIManager.cpp in Sources */,
+				10F87DED1988D32D00213FA4 /* geo_sweeper.cc in Sources */,
+				D8BBD1CD1647A1FA00F30A21 /* vbSpace.cpp in Sources */,
+				D8BBD1CE1647A1FA00F30A21 /* RenderingBase.cpp in Sources */,
+				101A05F419873A3B002BC476 /* vbInstanceManager.cpp in Sources */,
+				D8BBD1CF1647A1FA00F30A21 /* RenderingEngine.ES1.cpp in Sources */,
+				10F87DEB1988D32D00213FA4 /* geo_advancing.cc in Sources */,
+				10E566731990A8F000070654 /* vbFlyingCameraControl.cpp in Sources */,
+				D8BBD1D01647A1FA00F30A21 /* RenderingEngine.ES2.cpp in Sources */,
+				D8BBD1D11647A1FA00F30A21 /* vbConfiguration.cpp in Sources */,
+				D8BBD1D21647A1FA00F30A21 /* vbGeometry.cpp in Sources */,
+				10F87DF01988DFB600213FA4 /* vbPolygon.cpp in Sources */,
+				D8BBD1D31647A1FA00F30A21 /* vbMaterial.cpp in Sources */,
+				D8BBD1D41647A1FA00F30A21 /* vbMaterialFactory.cpp in Sources */,
+				D8BBD1D51647A1FA00F30A21 /* vbMaterialManager.cpp in Sources */,
+				D8BBD1D61647A1FA00F30A21 /* vbMesh.cpp in Sources */,
+				101A05F519873A3B002BC476 /* vbMeshInstance.cpp in Sources */,
+				D8BBD1D71647A1FA00F30A21 /* vbMeshFactory.cpp in Sources */,
+				D8BBD1D81647A1FA00F30A21 /* vbMeshManager.cpp in Sources */,
+				D8BBD1D91647A1FA00F30A21 /* vbPath.cpp in Sources */,
+				D8BBD1DA1647A1FA00F30A21 /* vbPathManager.cpp in Sources */,
+				D8BBD1DB1647A1FA00F30A21 /* vbViewInfo.cpp in Sources */,
+				5787604C18697419008FE7DF /* vbColorCoder.cpp in Sources */,
+				D8BBD1DC1647A1FA00F30A21 /* vbViewInfoAnimation.cpp in Sources */,
+				D8BBD1DD1647A1FA00F30A21 /* vbViewInfoCalc.cpp in Sources */,
+				D8BBD1DE1647A1FA00F30A21 /* vbViewInfoCamera.cpp in Sources */,
+				D8BBD1DF1647A1FA00F30A21 /* vbViewInfoFinger.cpp in Sources */,
+				D8BBD1E01647A1FA00F30A21 /* vbViewInfoNavi.cpp in Sources */,
+				D8BBD1E11647A1FA00F30A21 /* vbViewInfoProjection.cpp in Sources */,
+				C1C1B3D31A92C0BF00A6CFCE /* vbMeshGroupManager.cpp in Sources */,
+				D8BBD1E21647A1FA00F30A21 /* GLView.mm in Sources */,
+				6491456216533E9900A497B3 /* Projection.mm in Sources */,
+				D85FC4DF16C0F730004D5CC3 /* vbCamera.cpp in Sources */,
+				D85FC4E316C0FBE3004D5CC3 /* vbPerspectiveProjection.cpp in Sources */,
+				1E15DB1618B1E98400CC208C /* vbViewInfoFinger_Planar3D.cpp in Sources */,
+				57650FA718978D4400647760 /* vbViewInfoFinger_PalladiON.cpp in Sources */,
+				D85FC4E616C10754004D5CC3 /* vbICameraProjection.cpp in Sources */,
+				D8AB0FEF16C1E8A200DD659C /* vbCameraControl.cpp in Sources */,
+				D8AB0FF416C1EA6800DD659C /* vbTrackCameraControl.cpp in Sources */,
+				D8AB0FF816C24B1800DD659C /* vbFPSCameraControl.cpp in Sources */,
+				10F87DEC1988D32D00213FA4 /* geo_sweep.cc in Sources */,
+				D887D9F416C33FCD0032E3BF /* vbMoveOrbitZoomCameraControl.cpp in Sources */,
+				D887D9F816C344D20032E3BF /* vbRotateCameraControl.cpp in Sources */,
+				D887D9FB16C345AD0032E3BF /* vbMoveCameraControl.cpp in Sources */,
+				10F87DE91988D32D00213FA4 /* geometry.cc in Sources */,
+				C1C1B3D01A92BEA000A6CFCE /* vbMeshGroup.cpp in Sources */,
+				D887DA0116C3671E0032E3BF /* vbHorizontalPanCameraControl.cpp in Sources */,
+				D887DA0416C371BB0032E3BF /* vbFreeCameraControl.cpp in Sources */,
+				1003F3E2198A0C0800AD05FF /* vbPolyManager.cpp in Sources */,
+				D83338C116C9CA200052C551 /* vbAnimationCameraControl.cpp in Sources */,
+				D843074916CB191A00CEB3B1 /* vbOrthogonalProjection.cpp in Sources */,
+				D87555AE16CE319700155E6D /* vbEdges.cpp in Sources */,
+				D80CE4C116DB5C9F005BC3D3 /* vbViewInfoFinger_PISA.cpp in Sources */,
+				D80CE4C416DB5CF2005BC3D3 /* vbViewInfoFinger_YawPitch.cpp in Sources */,
+				D80CE4C716DB5D17005BC3D3 /* vbViewInfoFinger_STD1.cpp in Sources */,
+				109678E019878D5B001A47CB /* vbInstanceFactory.cpp in Sources */,
+				D85619D3172766B000F50DA6 /* vbViewInfoFinger_GongVueA.cpp in Sources */,
+				579F5F991856F111001C81C0 /* vbViewInfoFinger_ZoneView.cpp in Sources */,
+				D859D0D9172A3C210067AF99 /* vbMovingForwardCameraControl.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		DBA1DE5215C5B08D004AB5D8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		DBA1DE5315C5B08D004AB5D8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DBED90FB15DCA25700327DCC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (
+					"$(ARCHS_STANDARD)",
+					armv7s,
+					i386,
+					x86_64,
+				);
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = NO;
+				DSTROOT = "/tmp/VbNavKit-iOS.dst";
+				GCC_C_LANGUAGE_STANDARD = "compiler-default";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Classes/VbNavKit-iOS-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_VERSION = "";
+				HEADER_SEARCH_PATHS = "";
+				LIBRARY_SEARCH_PATHS = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "VbNavKit-iOS";
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DBED90FC15DCA25700327DCC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (
+					"$(ARCHS_STANDARD)",
+					armv7s,
+					i386,
+					x86_64,
+				);
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = NO;
+				DSTROOT = "/tmp/VbNavKit-iOS.dst";
+				GCC_C_LANGUAGE_STANDARD = "compiler-default";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Classes/VbNavKit-iOS-Prefix.pch";
+				GCC_VERSION = "";
+				HEADER_SEARCH_PATHS = "";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "VbNavKit-iOS";
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DBA1DE4015C5B08D004AB5D8 /* Build configuration list for PBXProject "VbNavKit-iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DBA1DE5215C5B08D004AB5D8 /* Debug */,
+				DBA1DE5315C5B08D004AB5D8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DBED90FA15DCA25700327DCC /* Build configuration list for PBXNativeTarget "VbNavKit-iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DBED90FB15DCA25700327DCC /* Debug */,
+				DBED90FC15DCA25700327DCC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DBA1DE3D15C5B08D004AB5D8 /* Project object */;
+}

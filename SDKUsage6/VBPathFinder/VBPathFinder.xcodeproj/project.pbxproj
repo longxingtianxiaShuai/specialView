@@ -1,0 +1,559 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D01B7CBC19A462C100B3AC90 /* VBEdge.m in Sources */ = {isa = PBXBuildFile; fileRef = D01B7CB919A462C100B3AC90 /* VBEdge.m */; };
+		D01B7CBD19A462C100B3AC90 /* VBNode.m in Sources */ = {isa = PBXBuildFile; fileRef = D01B7CBA19A462C100B3AC90 /* VBNode.m */; };
+		D0F833C91953FF3E002266CA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0F833C81953FF3E002266CA /* Foundation.framework */; };
+		D0F833CE1953FF3E002266CA /* VBPathFinder.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = D0F833CD1953FF3E002266CA /* VBPathFinder.h */; };
+		D0F833D01953FF3E002266CA /* VBPathFinder.m in Sources */ = {isa = PBXBuildFile; fileRef = D0F833CF1953FF3E002266CA /* VBPathFinder.m */; };
+		D0F833D81953FF3F002266CA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0F833C81953FF3E002266CA /* Foundation.framework */; };
+		D0F833DD1953FF3F002266CA /* libVBPathFinder.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D0F833C51953FF3E002266CA /* libVBPathFinder.a */; };
+		D0F833E31953FF3F002266CA /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D0F833E11953FF3F002266CA /* InfoPlist.strings */; };
+		D0F833E51953FF3F002266CA /* VBPathFinderTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D0F833E41953FF3F002266CA /* VBPathFinderTests.m */; };
+		D0F833FE1953FFA0002266CA /* Dijkstra.m in Sources */ = {isa = PBXBuildFile; fileRef = D0F833F31953FFA0002266CA /* Dijkstra.m */; };
+		D0F834001953FFA0002266CA /* FileParser.m in Sources */ = {isa = PBXBuildFile; fileRef = D0F833F71953FFA0002266CA /* FileParser.m */; };
+		D0F834021953FFA0002266CA /* PriorityQueueARC.m in Sources */ = {isa = PBXBuildFile; fileRef = D0F833FB1953FFA0002266CA /* PriorityQueueARC.m */; };
+		D0F834031953FFA0002266CA /* TopologyBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = D0F833FD1953FFA0002266CA /* TopologyBuilder.m */; };
+		D0F8340A1953FFAB002266CA /* TBXML.m in Sources */ = {isa = PBXBuildFile; fileRef = D0F834051953FFAB002266CA /* TBXML.m */; };
+		D0F8340B1953FFAB002266CA /* TBXML+Compression.m in Sources */ = {isa = PBXBuildFile; fileRef = D0F834071953FFAB002266CA /* TBXML+Compression.m */; };
+		D0F8340C1953FFAB002266CA /* TBXML+HTTP.m in Sources */ = {isa = PBXBuildFile; fileRef = D0F834091953FFAB002266CA /* TBXML+HTTP.m */; };
+		D0F834131953FFB2002266CA /* PathEdge.m in Sources */ = {isa = PBXBuildFile; fileRef = D0F8340E1953FFB2002266CA /* PathEdge.m */; };
+		D0F834141953FFB2002266CA /* PathNode.m in Sources */ = {isa = PBXBuildFile; fileRef = D0F834101953FFB2002266CA /* PathNode.m */; };
+		D0F834151953FFB2002266CA /* PathTopology.m in Sources */ = {isa = PBXBuildFile; fileRef = D0F834121953FFB2002266CA /* PathTopology.m */; };
+		D0F834181953FFBE002266CA /* MathLinear.m in Sources */ = {isa = PBXBuildFile; fileRef = D0F834171953FFBE002266CA /* MathLinear.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D0F833DB1953FF3F002266CA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D0F833BD1953FF3E002266CA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D0F833C41953FF3E002266CA;
+			remoteInfo = VBPathFinder;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		D0F833C31953FF3E002266CA /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+				D0F833CE1953FF3E002266CA /* VBPathFinder.h in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		D00A941F1959000200CC20B2 /* MAVector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MAVector.h; sourceTree = "<group>"; };
+		D01B7CB819A462C100B3AC90 /* VBEdge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = VBEdge.h; path = FindPath/VBEdge.h; sourceTree = "<group>"; };
+		D01B7CB919A462C100B3AC90 /* VBEdge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = VBEdge.m; path = FindPath/VBEdge.m; sourceTree = "<group>"; };
+		D01B7CBA19A462C100B3AC90 /* VBNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = VBNode.m; path = FindPath/VBNode.m; sourceTree = "<group>"; };
+		D01B7CBB19A462C100B3AC90 /* VBNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = VBNode.h; path = FindPath/VBNode.h; sourceTree = "<group>"; };
+		D0F833C51953FF3E002266CA /* libVBPathFinder.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libVBPathFinder.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		D0F833C81953FF3E002266CA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		D0F833CC1953FF3E002266CA /* VBPathFinder-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "VBPathFinder-Prefix.pch"; sourceTree = "<group>"; };
+		D0F833CD1953FF3E002266CA /* VBPathFinder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VBPathFinder.h; sourceTree = "<group>"; };
+		D0F833CF1953FF3E002266CA /* VBPathFinder.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VBPathFinder.m; sourceTree = "<group>"; };
+		D0F833D51953FF3F002266CA /* VBPathFinderTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VBPathFinderTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D0F833E01953FF3F002266CA /* VBPathFinderTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "VBPathFinderTests-Info.plist"; sourceTree = "<group>"; };
+		D0F833E21953FF3F002266CA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		D0F833E41953FF3F002266CA /* VBPathFinderTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VBPathFinderTests.m; sourceTree = "<group>"; };
+		D0F833F21953FFA0002266CA /* Dijkstra.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Dijkstra.h; path = FindPath/Dijkstra.h; sourceTree = "<group>"; };
+		D0F833F31953FFA0002266CA /* Dijkstra.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Dijkstra.m; path = FindPath/Dijkstra.m; sourceTree = "<group>"; };
+		D0F833F61953FFA0002266CA /* FileParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FileParser.h; path = FindPath/FileParser.h; sourceTree = "<group>"; };
+		D0F833F71953FFA0002266CA /* FileParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FileParser.m; path = FindPath/FileParser.m; sourceTree = "<group>"; };
+		D0F833FA1953FFA0002266CA /* PriorityQueueARC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PriorityQueueARC.h; path = FindPath/PriorityQueueARC.h; sourceTree = "<group>"; };
+		D0F833FB1953FFA0002266CA /* PriorityQueueARC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PriorityQueueARC.m; path = FindPath/PriorityQueueARC.m; sourceTree = "<group>"; };
+		D0F833FC1953FFA0002266CA /* TopologyBuilder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TopologyBuilder.h; path = FindPath/TopologyBuilder.h; sourceTree = "<group>"; };
+		D0F833FD1953FFA0002266CA /* TopologyBuilder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TopologyBuilder.m; path = FindPath/TopologyBuilder.m; sourceTree = "<group>"; };
+		D0F834041953FFAB002266CA /* TBXML.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TBXML.h; path = TBXML/TBXML.h; sourceTree = "<group>"; };
+		D0F834051953FFAB002266CA /* TBXML.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TBXML.m; path = TBXML/TBXML.m; sourceTree = "<group>"; };
+		D0F834061953FFAB002266CA /* TBXML+Compression.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "TBXML+Compression.h"; path = "TBXML/TBXML+Compression.h"; sourceTree = "<group>"; };
+		D0F834071953FFAB002266CA /* TBXML+Compression.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "TBXML+Compression.m"; path = "TBXML/TBXML+Compression.m"; sourceTree = "<group>"; };
+		D0F834081953FFAB002266CA /* TBXML+HTTP.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "TBXML+HTTP.h"; path = "TBXML/TBXML+HTTP.h"; sourceTree = "<group>"; };
+		D0F834091953FFAB002266CA /* TBXML+HTTP.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "TBXML+HTTP.m"; path = "TBXML/TBXML+HTTP.m"; sourceTree = "<group>"; };
+		D0F8340D1953FFB2002266CA /* PathEdge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PathEdge.h; path = Topology/PathEdge.h; sourceTree = "<group>"; };
+		D0F8340E1953FFB2002266CA /* PathEdge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PathEdge.m; path = Topology/PathEdge.m; sourceTree = "<group>"; };
+		D0F8340F1953FFB2002266CA /* PathNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PathNode.h; path = Topology/PathNode.h; sourceTree = "<group>"; };
+		D0F834101953FFB2002266CA /* PathNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PathNode.m; path = Topology/PathNode.m; sourceTree = "<group>"; };
+		D0F834111953FFB2002266CA /* PathTopology.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PathTopology.h; path = Topology/PathTopology.h; sourceTree = "<group>"; };
+		D0F834121953FFB2002266CA /* PathTopology.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PathTopology.m; path = Topology/PathTopology.m; sourceTree = "<group>"; };
+		D0F834161953FFBE002266CA /* MathLinear.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MathLinear.h; path = Math/MathLinear.h; sourceTree = "<group>"; };
+		D0F834171953FFBE002266CA /* MathLinear.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MathLinear.m; path = Math/MathLinear.m; sourceTree = "<group>"; };
+		D0F8341919540022002266CA /* MAPoi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MAPoi.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D0F833C21953FF3E002266CA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D0F833C91953FF3E002266CA /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D0F833D21953FF3F002266CA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D0F833DD1953FF3F002266CA /* libVBPathFinder.a in Frameworks */,
+				D0F833D81953FF3F002266CA /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D0F833BC1953FF3E002266CA = {
+			isa = PBXGroup;
+			children = (
+				D0F833CA1953FF3E002266CA /* VBPathFinder */,
+				D0F833DE1953FF3F002266CA /* VBPathFinderTests */,
+				D0F833C71953FF3E002266CA /* Frameworks */,
+				D0F833C61953FF3E002266CA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D0F833C61953FF3E002266CA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D0F833C51953FF3E002266CA /* libVBPathFinder.a */,
+				D0F833D51953FF3F002266CA /* VBPathFinderTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D0F833C71953FF3E002266CA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D0F833C81953FF3E002266CA /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D0F833CA1953FF3E002266CA /* VBPathFinder */ = {
+			isa = PBXGroup;
+			children = (
+				D0F833F11953FF86002266CA /* FindPath */,
+				D0F8341919540022002266CA /* MAPoi.h */,
+				D0F833EE1953FF74002266CA /* Math */,
+				D00A941F1959000200CC20B2 /* MAVector.h */,
+				D0F833CB1953FF3E002266CA /* Supporting Files */,
+				D0F833F01953FF80002266CA /* TBXML */,
+				D0F833EF1953FF79002266CA /* Topology */,
+				D0F833CD1953FF3E002266CA /* VBPathFinder.h */,
+				D0F833CF1953FF3E002266CA /* VBPathFinder.m */,
+			);
+			path = VBPathFinder;
+			sourceTree = "<group>";
+		};
+		D0F833CB1953FF3E002266CA /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D0F833CC1953FF3E002266CA /* VBPathFinder-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D0F833DE1953FF3F002266CA /* VBPathFinderTests */ = {
+			isa = PBXGroup;
+			children = (
+				D0F833E41953FF3F002266CA /* VBPathFinderTests.m */,
+				D0F833DF1953FF3F002266CA /* Supporting Files */,
+			);
+			path = VBPathFinderTests;
+			sourceTree = "<group>";
+		};
+		D0F833DF1953FF3F002266CA /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D0F833E01953FF3F002266CA /* VBPathFinderTests-Info.plist */,
+				D0F833E11953FF3F002266CA /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D0F833EE1953FF74002266CA /* Math */ = {
+			isa = PBXGroup;
+			children = (
+				D0F834161953FFBE002266CA /* MathLinear.h */,
+				D0F834171953FFBE002266CA /* MathLinear.m */,
+			);
+			name = Math;
+			sourceTree = "<group>";
+		};
+		D0F833EF1953FF79002266CA /* Topology */ = {
+			isa = PBXGroup;
+			children = (
+				D0F8340D1953FFB2002266CA /* PathEdge.h */,
+				D0F8340E1953FFB2002266CA /* PathEdge.m */,
+				D0F8340F1953FFB2002266CA /* PathNode.h */,
+				D0F834101953FFB2002266CA /* PathNode.m */,
+				D0F834111953FFB2002266CA /* PathTopology.h */,
+				D0F834121953FFB2002266CA /* PathTopology.m */,
+			);
+			name = Topology;
+			sourceTree = "<group>";
+		};
+		D0F833F01953FF80002266CA /* TBXML */ = {
+			isa = PBXGroup;
+			children = (
+				D0F834041953FFAB002266CA /* TBXML.h */,
+				D0F834051953FFAB002266CA /* TBXML.m */,
+				D0F834061953FFAB002266CA /* TBXML+Compression.h */,
+				D0F834071953FFAB002266CA /* TBXML+Compression.m */,
+				D0F834081953FFAB002266CA /* TBXML+HTTP.h */,
+				D0F834091953FFAB002266CA /* TBXML+HTTP.m */,
+			);
+			name = TBXML;
+			sourceTree = "<group>";
+		};
+		D0F833F11953FF86002266CA /* FindPath */ = {
+			isa = PBXGroup;
+			children = (
+				D01B7CB819A462C100B3AC90 /* VBEdge.h */,
+				D01B7CB919A462C100B3AC90 /* VBEdge.m */,
+				D01B7CBA19A462C100B3AC90 /* VBNode.m */,
+				D01B7CBB19A462C100B3AC90 /* VBNode.h */,
+				D0F833F21953FFA0002266CA /* Dijkstra.h */,
+				D0F833F31953FFA0002266CA /* Dijkstra.m */,
+				D0F833F61953FFA0002266CA /* FileParser.h */,
+				D0F833F71953FFA0002266CA /* FileParser.m */,
+				D0F833FA1953FFA0002266CA /* PriorityQueueARC.h */,
+				D0F833FB1953FFA0002266CA /* PriorityQueueARC.m */,
+				D0F833FC1953FFA0002266CA /* TopologyBuilder.h */,
+				D0F833FD1953FFA0002266CA /* TopologyBuilder.m */,
+			);
+			name = FindPath;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D0F833C41953FF3E002266CA /* VBPathFinder */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D0F833E81953FF3F002266CA /* Build configuration list for PBXNativeTarget "VBPathFinder" */;
+			buildPhases = (
+				D0F833C11953FF3E002266CA /* Sources */,
+				D0F833C21953FF3E002266CA /* Frameworks */,
+				D0F833C31953FF3E002266CA /* CopyFiles */,
+				D0F8341F195404F0002266CA /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = VBPathFinder;
+			productName = VBPathFinder;
+			productReference = D0F833C51953FF3E002266CA /* libVBPathFinder.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		D0F833D41953FF3F002266CA /* VBPathFinderTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D0F833EB1953FF3F002266CA /* Build configuration list for PBXNativeTarget "VBPathFinderTests" */;
+			buildPhases = (
+				D0F833D11953FF3F002266CA /* Sources */,
+				D0F833D21953FF3F002266CA /* Frameworks */,
+				D0F833D31953FF3F002266CA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D0F833DC1953FF3F002266CA /* PBXTargetDependency */,
+			);
+			name = VBPathFinderTests;
+			productName = VBPathFinderTests;
+			productReference = D0F833D51953FF3F002266CA /* VBPathFinderTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D0F833BD1953FF3E002266CA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "___FULLUSERNAME___";
+			};
+			buildConfigurationList = D0F833C01953FF3E002266CA /* Build configuration list for PBXProject "VBPathFinder" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = D0F833BC1953FF3E002266CA;
+			productRefGroup = D0F833C61953FF3E002266CA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D0F833C41953FF3E002266CA /* VBPathFinder */,
+				D0F833D41953FF3F002266CA /* VBPathFinderTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D0F833D31953FF3F002266CA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D0F833E31953FF3F002266CA /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		D0F8341F195404F0002266CA /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 12;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "##########################################\n#\n# c.f. http://stackoverflow.com/questions/3520977/build-fat-static-library-device-simulator-using-xcode-and-sdk-4\n#\n# Version 2.7\n#\n# Latest Change:\n# - Supports iPhone 5 / iPod Touch 5 (uses Apple's workaround to lipo bug)\n#\n# Purpose:\n#   Automatically create a Universal static library for iPhone + iPad + iPhone Simulator from within XCode\n#\n# Author: Adam Martin - http://twitter.com/redglassesapps\n# Based on: original script from Eonil (main changes: Eonil's script WILL NOT WORK in Xcode GUI - it WILL CRASH YOUR COMPUTER)\n#\n\nset -e\nset -o pipefail\n\n#################[ Tests: helps workaround any future bugs in Xcode ]########\n#\nDEBUG_THIS_SCRIPT=\"true\"\n\nif [ $DEBUG_THIS_SCRIPT = \"true\" ]\nthen\necho \"########### TESTS #############\"\necho \"Use the following variables when debugging this script; note that they may change on recursions\"\necho \"BUILD_DIR = $BUILD_DIR\"\necho \"BUILD_ROOT = $BUILD_ROOT\"\necho \"CONFIGURATION_BUILD_DIR = $CONFIGURATION_BUILD_DIR\"\necho \"BUILT_PRODUCTS_DIR = $BUILT_PRODUCTS_DIR\"\necho \"CONFIGURATION_TEMP_DIR = $CONFIGURATION_TEMP_DIR\"\necho \"TARGET_BUILD_DIR = $TARGET_BUILD_DIR\"\nfi\n\n#####################[ part 1 ]##################\n# First, work out the BASESDK version number (NB: Apple ought to report this, but they hide it)\n#    (incidental: searching for substrings in sh is a nightmare! Sob)\n\nSDK_VERSION=$(echo ${SDK_NAME} | grep -o '.\\{4\\}$')\n\n# Next, work out if we're in SIM or DEVICE\n\nif [ ${PLATFORM_NAME} = \"iphonesimulator\" ]\nthen\nOTHER_SDK_TO_BUILD=iphoneos${SDK_VERSION}\nelse\nOTHER_SDK_TO_BUILD=iphonesimulator${SDK_VERSION}\nfi\n\necho \"XCode has selected SDK: ${PLATFORM_NAME} with version: ${SDK_VERSION} (although back-targetting: ${IPHONEOS_DEPLOYMENT_TARGET})\"\necho \"...therefore, OTHER_SDK_TO_BUILD = ${OTHER_SDK_TO_BUILD}\"\n#\n#####################[ end of part 1 ]##################\n\n#####################[ part 2 ]##################\n#\n# IF this is the original invocation, invoke WHATEVER other builds are required\n#\n# Xcode is already building ONE target...\n#\n# ...but this is a LIBRARY, so Apple is wrong to set it to build just one.\n# ...we need to build ALL targets\n# ...we MUST NOT re-build the target that is ALREADY being built: Xcode WILL CRASH YOUR COMPUTER if you try this (infinite recursion!)\n#\n#\n# So: build ONLY the missing platforms/configurations.\n\nif [ \"true\" == ${ALREADYINVOKED:-false} ]\nthen\necho \"RECURSION: I am NOT the root invocation, so I'm NOT going to recurse\"\nelse\n# CRITICAL:\n# Prevent infinite recursion (Xcode sucks)\nexport ALREADYINVOKED=\"true\"\n\necho \"RECURSION: I am the root ... recursing all missing build targets NOW...\"\necho \"RECURSION: ...about to invoke: xcodebuild -configuration \\\"${CONFIGURATION}\\\" -project \\\"${PROJECT_NAME}.xcodeproj\\\" -target \\\"${TARGET_NAME}\\\" -sdk \\\"${OTHER_SDK_TO_BUILD}\\\" ${ACTION} RUN_CLANG_STATIC_ANALYZER=NO\" BUILD_DIR=\\\"${BUILD_DIR}\\\" BUILD_ROOT=\\\"${BUILD_ROOT}\\\" SYMROOT=\\\"${SYMROOT}\\\"\n\nxcodebuild -configuration \"${CONFIGURATION}\" -project \"${PROJECT_NAME}.xcodeproj\" -target \"${TARGET_NAME}\" -sdk \"${OTHER_SDK_TO_BUILD}\" ${ACTION} RUN_CLANG_STATIC_ANALYZER=NO BUILD_DIR=\"${BUILD_DIR}\" BUILD_ROOT=\"${BUILD_ROOT}\" SYMROOT=\"${SYMROOT}\"\n\nACTION=\"build\"\n\n#Merge all platform binaries as a fat binary for each configurations.\n\n# Calculate where the (multiple) built files are coming from:\nCURRENTCONFIG_DEVICE_DIR=${SYMROOT}/${CONFIGURATION}-iphoneos\nCURRENTCONFIG_SIMULATOR_DIR=${SYMROOT}/${CONFIGURATION}-iphonesimulator\n\necho \"Taking device build from: ${CURRENTCONFIG_DEVICE_DIR}\"\necho \"Taking simulator build from: ${CURRENTCONFIG_SIMULATOR_DIR}\"\n\nCREATING_UNIVERSAL_DIR=${SYMROOT}/${CONFIGURATION}-universal\n#CREATING_UNIVERSAL_DIR=\"/Applications/vbLib/${PROJECT_NAME}/\"\n\necho \"...I will output a universal build to: ${CREATING_UNIVERSAL_DIR}\"\n\n# ... remove the products of previous runs of this script\n#      NB: this directory is ONLY created by this script - it should be safe to delete!\n\nrm -rf \"${CREATING_UNIVERSAL_DIR}\"\nmkdir \"${CREATING_UNIVERSAL_DIR}\"\n\n#\necho \"lipo: for current configuration (${CONFIGURATION}) creating output file: ${CREATING_UNIVERSAL_DIR}/${EXECUTABLE_NAME}\"\nxcrun -sdk iphoneos lipo -create -output \"${CREATING_UNIVERSAL_DIR}/${EXECUTABLE_NAME}\" \"${CURRENTCONFIG_DEVICE_DIR}/${EXECUTABLE_NAME}\" \"${CURRENTCONFIG_SIMULATOR_DIR}/${EXECUTABLE_NAME}\"\n\n#########\n#\n# Added: StackOverflow suggestion to also copy \"include\" files\n#    (untested, but should work OK)\n#\necho \"Fetching headers from ${PUBLIC_HEADERS_FOLDER_PATH}\"\necho \"  (if you embed your library project in another project, you will need to add\"\necho \"   a \"User Search Headers\" build setting of: (NB INCLUDE THE DOUBLE QUOTES BELOW!)\"\necho '        \"$(TARGET_BUILD_DIR)/usr/local/include/\"'\nif [ -d \"${CURRENTCONFIG_DEVICE_DIR}${PUBLIC_HEADERS_FOLDER_PATH}\" ]\nthen\nmkdir -p \"${CREATING_UNIVERSAL_DIR}${PUBLIC_HEADERS_FOLDER_PATH}\"\n# * needs to be outside the double quotes?\ncp -r \"${CURRENTCONFIG_DEVICE_DIR}${PUBLIC_HEADERS_FOLDER_PATH}\"* \"${CREATING_UNIVERSAL_DIR}${PUBLIC_HEADERS_FOLDER_PATH}\"\nfi\nfi";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D0F833C11953FF3E002266CA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D0F834151953FFB2002266CA /* PathTopology.m in Sources */,
+				D01B7CBD19A462C100B3AC90 /* VBNode.m in Sources */,
+				D0F834141953FFB2002266CA /* PathNode.m in Sources */,
+				D0F8340A1953FFAB002266CA /* TBXML.m in Sources */,
+				D0F834001953FFA0002266CA /* FileParser.m in Sources */,
+				D0F834131953FFB2002266CA /* PathEdge.m in Sources */,
+				D0F8340C1953FFAB002266CA /* TBXML+HTTP.m in Sources */,
+				D01B7CBC19A462C100B3AC90 /* VBEdge.m in Sources */,
+				D0F834021953FFA0002266CA /* PriorityQueueARC.m in Sources */,
+				D0F834181953FFBE002266CA /* MathLinear.m in Sources */,
+				D0F8340B1953FFAB002266CA /* TBXML+Compression.m in Sources */,
+				D0F833D01953FF3E002266CA /* VBPathFinder.m in Sources */,
+				D0F834031953FFA0002266CA /* TopologyBuilder.m in Sources */,
+				D0F833FE1953FFA0002266CA /* Dijkstra.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D0F833D11953FF3F002266CA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D0F833E51953FF3F002266CA /* VBPathFinderTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D0F833DC1953FF3F002266CA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D0F833C41953FF3E002266CA /* VBPathFinder */;
+			targetProxy = D0F833DB1953FF3F002266CA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D0F833E11953FF3F002266CA /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D0F833E21953FF3F002266CA /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D0F833E61953FF3F002266CA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		D0F833E71953FF3F002266CA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D0F833E91953FF3F002266CA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (
+					"$(ARCHS_STANDARD)",
+					armv7s,
+					i386,
+					x86_64,
+				);
+				DSTROOT = /tmp/VBPathFinder.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "VBPathFinder/VBPathFinder-Prefix.pch";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		D0F833EA1953FF3F002266CA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (
+					"$(ARCHS_STANDARD)",
+					armv7s,
+					i386,
+					x86_64,
+				);
+				DSTROOT = /tmp/VBPathFinder.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "VBPathFinder/VBPathFinder-Prefix.pch";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		D0F833EC1953FF3F002266CA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "VBPathFinder/VBPathFinder-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "VBPathFinderTests/VBPathFinderTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		D0F833ED1953FF3F002266CA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "VBPathFinder/VBPathFinder-Prefix.pch";
+				INFOPLIST_FILE = "VBPathFinderTests/VBPathFinderTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D0F833C01953FF3E002266CA /* Build configuration list for PBXProject "VBPathFinder" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D0F833E61953FF3F002266CA /* Debug */,
+				D0F833E71953FF3F002266CA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D0F833E81953FF3F002266CA /* Build configuration list for PBXNativeTarget "VBPathFinder" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D0F833E91953FF3F002266CA /* Debug */,
+				D0F833EA1953FF3F002266CA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D0F833EB1953FF3F002266CA /* Build configuration list for PBXNativeTarget "VBPathFinderTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D0F833EC1953FF3F002266CA /* Debug */,
+				D0F833ED1953FF3F002266CA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D0F833BD1953FF3E002266CA /* Project object */;
+}
