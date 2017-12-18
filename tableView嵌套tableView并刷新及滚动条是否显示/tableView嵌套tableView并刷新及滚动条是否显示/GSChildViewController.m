@@ -20,6 +20,7 @@
 //@property (nonatomic,strong)UITableView *tableView;
 /** 用来显示的假数据 */
 @property (strong, nonatomic) NSMutableArray *data;
+@property (nonatomic,strong)UITableView *tableView;
 @end
 
 @implementation GSChildViewController
@@ -52,7 +53,7 @@
     for (int i = 0; i<5; i++) {
         [self.data addObject:RandomData];
     }
-    __weak GSNewTableView *tableView = self.tableView;
+    __weak UITableView *tableView = self.tableView;
     dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(2.0 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
         [tableView reloadData];
         [tableView.infiniteScrollingView stopAnimating];
@@ -65,7 +66,7 @@
 }
 
 - (void)setUpSubviews{
-    GSNewTableView *tableView = [[GSNewTableView alloc] init];
+    UITableView *tableView = [[UITableView alloc] init];
     tableView.delegate = self;
     tableView.dataSource = self;
     self.tableView = tableView;
@@ -115,29 +116,16 @@
         [[NSNotificationCenter defaultCenter] postNotificationName:@"leaveTop" object:nil];
         
     }
-//    else{
-//        _vcCanScroll = YES;
-//    }
-    // 设置是否显示垂直滚动条 VerticalScrollIndicator
+
     self.tableView.showsVerticalScrollIndicator =_vcCanScroll?YES:NO;
     
 }
 
 - (void)setVcCanScroll:(BOOL)vcCanScroll{
     _vcCanScroll = vcCanScroll;
-//    if (!vcCanScroll) {
-//        
-//    }
+
 }
-//- (void)setCellCanScroll:(BOOL)cellCanScroll{
-//
-//    _vcCanScroll = cellCanScroll;
-//    //self.cellCanScroll = cellCanScroll;
-//    if (!cellCanScroll) {
-//        self.tableView.contentOffset = CGPointZero;
-//    }
-//
-//}
+
 #pragma mark lazy
 - (NSMutableArray *)data
 {

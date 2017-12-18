@@ -7,11 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "GSNewTableView.h"
+
 @interface GSChildViewController : UIViewController
 @property (nonatomic, assign) BOOL vcCanScroll;
 @property (nonatomic, assign) BOOL isRefresh;
-@property (nonatomic,strong)GSNewTableView *tableView;
+
 
 @property (nonatomic,assign)BOOL cellCanScroll;
 @end

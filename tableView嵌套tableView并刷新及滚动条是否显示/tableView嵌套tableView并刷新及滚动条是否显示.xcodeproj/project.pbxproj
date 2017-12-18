@@ -19,7 +19,6 @@
 		30B7867A1FB4737500C488F7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 30B786791FB4737500C488F7 /* main.m */; };
 		30B786841FB4737500C488F7 /* tableView__tableView___________Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 30B786831FB4737500C488F7 /* tableView__tableView___________Tests.m */; };
 		30B7868F1FB4737500C488F7 /* tableView__tableView___________UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 30B7868E1FB4737500C488F7 /* tableView__tableView___________UITests.m */; };
-		30F32EAB1FB69A070079D257 /* GSNewTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 30F32EAA1FB69A070079D257 /* GSNewTableView.m */; };
 		49735C6EC4CE39B8DE5C4431 /* libPods-tableView嵌套tableView并刷新及滚动条是否显示.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 70F2F8900B71471239F36F21 /* libPods-tableView嵌套tableView并刷新及滚动条是否显示.a */; };
 /* End PBXBuildFile section */
 
@@ -70,8 +69,6 @@
 		30B7868A1FB4737500C488F7 /* tableView嵌套tableView并刷新及滚动条是否显示UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "tableView嵌套tableView并刷新及滚动条是否显示UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		30B7868E1FB4737500C488F7 /* tableView__tableView___________UITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "tableView__tableView___________UITests.m"; sourceTree = "<group>"; };
 		30B786901FB4737500C488F7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		30F32EA91FB69A070079D257 /* GSNewTableView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GSNewTableView.h; sourceTree = "<group>"; };
-		30F32EAA1FB69A070079D257 /* GSNewTableView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GSNewTableView.m; sourceTree = "<group>"; };
 		70F2F8900B71471239F36F21 /* libPods-tableView嵌套tableView并刷新及滚动条是否显示.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-tableView嵌套tableView并刷新及滚动条是否显示.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A41FE52BB75C7046CCB63542 /* Pods-tableView嵌套tableView并刷新及滚动条是否显示.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tableView嵌套tableView并刷新及滚动条是否显示.release.xcconfig"; path = "Pods/Target Support Files/Pods-tableView嵌套tableView并刷新及滚动条是否显示/Pods-tableView嵌套tableView并刷新及滚动条是否显示.release.xcconfig"; sourceTree = "<group>"; };
 		F41429283EDEED60908CCEB3 /* Pods-tableView嵌套tableView并刷新及滚动条是否显示.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tableView嵌套tableView并刷新及滚动条是否显示.debug.xcconfig"; path = "Pods/Target Support Files/Pods-tableView嵌套tableView并刷新及滚动条是否显示/Pods-tableView嵌套tableView并刷新及滚动条是否显示.debug.xcconfig"; sourceTree = "<group>"; };
@@ -166,8 +163,6 @@
 				30ACBFDE1FB54A82008B6C05 /* GSParentViewController.m */,
 				30ACBFE01FB54ADC008B6C05 /* GSChildViewController.h */,
 				30ACBFE11FB54ADC008B6C05 /* GSChildViewController.m */,
-				30F32EA91FB69A070079D257 /* GSNewTableView.h */,
-				30F32EAA1FB69A070079D257 /* GSNewTableView.m */,
 			);
 			path = "tableView嵌套tableView并刷新及滚动条是否显示";
 			sourceTree = "<group>";
@@ -396,7 +391,6 @@
 			files = (
 				30B7866F1FB4737500C488F7 /* ViewController.m in Sources */,
 				30ACBFDC1FB5490E008B6C05 /* GSTableview.m in Sources */,
-				30F32EAB1FB69A070079D257 /* GSNewTableView.m in Sources */,
 				30B7867A1FB4737500C488F7 /* main.m in Sources */,
 				30ACBFE61FB54E5C008B6C05 /* GSBottomTableViewCell.m in Sources */,
 				30ACBFDF1FB54A82008B6C05 /* GSParentViewController.m in Sources */,

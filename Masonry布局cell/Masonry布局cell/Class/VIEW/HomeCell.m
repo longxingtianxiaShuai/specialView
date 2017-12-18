@@ -119,7 +119,7 @@
         make.top.equalTo(self.contentLabel.mas_bottom).mas_offset(marginW);
         make.left.equalTo(self.contentView.mas_left).mas_offset(marginW);
         make.right.equalTo(self.contentView.mas_right).mas_offset(-marginW);
-        // 如果是垂直水平滚动 这里需要实现预估好高度
+        // 如果是垂直水平滚动 这里需要先预估好高度
         make.height.mas_equalTo(155);
     }];
 
