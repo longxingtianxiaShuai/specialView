@@ -149,6 +149,7 @@
         
     }
     
+    
     // 如果是第二级cell
     if (currentModel.three_index == 0) {
         if (currentModel.is_open) {
